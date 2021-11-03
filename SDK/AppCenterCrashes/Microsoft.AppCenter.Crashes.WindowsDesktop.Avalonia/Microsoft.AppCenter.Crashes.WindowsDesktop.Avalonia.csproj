@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFrameworks>netcoreapp3.0;net461;net472;net5.0;net6.0</TargetFrameworks>
+    <RootNamespace>Microsoft.AppCenter.Crashes</RootNamespace>
+    <Version>4.5.0</Version>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+    <FileVersion>4.5.0.0</FileVersion>
+    <AssemblyName>Microsoft.AppCenter.Crashes</AssemblyName>
+    <DocumentationFile>bin\Microsoft.AppCenter.Crashes.xml</DocumentationFile>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>..\..\..\appcenter-public-key.snk</AssemblyOriginatorKeyFile>
+    <DelaySign>true</DelaySign>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+    <PackageId>Aigio.Avalonia.AppCenter.Crashes</PackageId>
+    <Authors>aigio + Microsoft</Authors>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Description>This package contains functionalities to collect crash reports for your application.</Description>
+    <NeutralLanguage>en-US</NeutralLanguage>
+    <PackageTags>app center appcenter mobilecenter crashes avalonia avaloniaui</PackageTags>
+    <PackageProjectUrl>https://github.com/BeyondDimension/appcenter-sdk-dotnet</PackageProjectUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <Copyright>© Microsoft Corporation. All rights reserved.</Copyright>
+    <Company>© Microsoft Corporation. All rights reserved.</Company>
+    <RepositoryUrl>https://github.com/BeyondDimension/appcenter-sdk-dotnet.git</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <NeutralLanguage>en-US</NeutralLanguage>
+    <PackageIconUrl>https://aka.ms/k76877</PackageIconUrl>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <EmbedUntrackedSources>true</EmbedUntrackedSources>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+  </PropertyGroup>
+  <Import Project="..\Microsoft.AppCenter.Crashes.Shared\Microsoft.AppCenter.Crashes.Shared.projitems" Label="Shared" />
+  <Import Project="..\Microsoft.AppCenter.Crashes.Windows.Shared\Microsoft.AppCenter.Crashes.Windows.Shared.projitems" Label="Shared" />
+  <ItemGroup>
+    <ProjectReference Include="..\..\AppCenter\Microsoft.AppCenter.WindowsDesktop.Avalonia\Microsoft.AppCenter.WindowsDesktop.Avalonia.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\AppCenter\Microsoft.AppCenter.WindowsDesktop.Avalonia\Properties\AssemblyInfo.OS.cs">
+      <LinkBase>Properties</LinkBase>
+    </Compile>
+    <Compile Include="..\Microsoft.AppCenter.Crashes.WindowsDesktop\**\*.cs" />
+    <Compile Remove="..\Microsoft.AppCenter.Crashes.WindowsDesktop\bin\**" />
+    <Compile Remove="..\Microsoft.AppCenter.Crashes.WindowsDesktop\obj\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.1.1" PrivateAssets="All"/>
+  </ItemGroup>
+</Project>
