@@ -4,7 +4,7 @@
     <TargetFrameworks>netcoreapp3.0;net461;net5.0;net6.0</TargetFrameworks>
     <RootNamespace>Microsoft.AppCenter</RootNamespace>
     <UseWindowsForms>false</UseWindowsForms>
-    <Version>4.4.0-SNAPSHOT</Version>
+    <Version>4.4.0</Version>
     <AssemblyVersion>0.0.0.0</AssemblyVersion>
     <FileVersion>4.4.0.0</FileVersion>
     <AssemblyName>Microsoft.AppCenter</AssemblyName>
