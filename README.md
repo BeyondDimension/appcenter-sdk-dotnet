@@ -1,8 +1,8 @@
-[![GitHub Release](https://img.shields.io/github/release/microsoft/appcenter-sdk-dotnet.svg)](https://github.com/microsoft/appcenter-sdk-dotnet/releases/latest)
-[![NuGet](https://img.shields.io/nuget/v/Microsoft.AppCenter.svg)](https://www.nuget.org/packages/Microsoft.AppCenter/)
-[![license](https://img.shields.io/badge/license-MIT%20License-yellow.svg)](https://github.com/microsoft/appcenter-sdk-dotnet/blob/master/license.txt)
+[![GitHub Release](https://img.shields.io/github/release/SteamTools-Team/appcenter-sdk-dotnet.svg)](https://github.com/SteamTools-Team/appcenter-sdk-dotnet/releases/latest)
+[![NuGet](https://img.shields.io/nuget/v/Aigio.Avalonia.AppCenter.svg)](https://www.nuget.org/packages/Aigio.Avalonia.AppCenter/)
+[![license](https://img.shields.io/badge/license-MIT%20License-yellow.svg)](https://github.com/SteamTools-Team/appcenter-sdk-dotnet/blob/master/license.txt)
 
-# Visual Studio App Center SDK for .NET
+# Visual Studio App Center SDK for AvaloniaUI Only Windows
 
 App Center is your continuous integration, delivery and learning solution for iOS, Android, and Windows apps.
 Get faster release cycles, higher-quality apps, and the insights to build what users want.
