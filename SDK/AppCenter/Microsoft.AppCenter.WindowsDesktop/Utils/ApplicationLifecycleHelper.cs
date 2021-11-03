@@ -31,7 +31,7 @@ namespace Microsoft.AppCenter
             {
                 if (_instance == null)
                 {
-#if WINDOWS10_0_17763_0
+#if WINDOWS10_0_17763_0 && !AVALONIA
                     if (WpfHelper.IsRunningAsUwp)
                     {
                         _instance = new ApplicationLifecycleHelperWinUI();

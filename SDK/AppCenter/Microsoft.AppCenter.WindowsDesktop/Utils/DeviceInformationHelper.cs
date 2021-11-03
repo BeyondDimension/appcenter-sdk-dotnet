@@ -42,11 +42,20 @@ namespace Microsoft.AppCenter.Utils
 
         protected override string GetSdkName()
         {
+#if AVALONIA
+            const string sdkName =
+#if NETFRAMEWORK
+                "appcenter.wpf.net";
+#else
+                "appcenter.wpf.netcore";
+#endif
+#else
             var sdkName = WpfHelper.IsRunningOnWpf ? "appcenter.wpf" : "appcenter.winforms";
-#if WINDOWS10_0_17763_0            
+#if WINDOWS10_0_17763_0
             sdkName = $"{sdkName}.net";
 #elif NETCOREAPP3_0
             sdkName = $"{sdkName}.netcore";
+#endif
 #endif
             return sdkName;
         }
@@ -100,7 +109,7 @@ namespace Microsoft.AppCenter.Utils
                     var manufacturer = (string)managementObject["Manufacturer"];
                     return string.IsNullOrEmpty(manufacturer) || DefaultSystemManufacturer == manufacturer ? null : manufacturer;
                 }
-            } 
+            }
             catch (UnauthorizedAccessException exception)
             {
                 AppCenterLog.Warn(AppCenterLog.LogTag, "Failed to get device OEM name with error: ", exception);
