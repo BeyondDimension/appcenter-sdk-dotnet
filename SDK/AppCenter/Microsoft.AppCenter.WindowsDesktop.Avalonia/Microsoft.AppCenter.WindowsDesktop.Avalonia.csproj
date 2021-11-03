@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFrameworks>netcoreapp3.0;net461;net5.0;net6.0</TargetFrameworks>
+    <RootNamespace>Microsoft.AppCenter</RootNamespace>
+    <UseWindowsForms>false</UseWindowsForms>
+    <Version>4.4.0-SNAPSHOT</Version>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+    <FileVersion>4.4.0.0</FileVersion>
+    <AssemblyName>Microsoft.AppCenter</AssemblyName>
+    <DocumentationFile>bin\Microsoft.AppCenter.xml</DocumentationFile>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>..\..\..\appcenter-public-key.snk</AssemblyOriginatorKeyFile>
+    <DelaySign>true</DelaySign>
+    <LangVersion>latest</LangVersion>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DefineConstants>AVALONIA;$(DefineConstants)</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+    <PackageId>Aigio.Avalonia.AppCenter</PackageId>
+    <Authors>aigio + Microsoft</Authors>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Description>This package contains the basic functionalities that all App Center services use to communicate with the backend.</Description>
+    <NeutralLanguage>en-US</NeutralLanguage>
+    <PackageTags>app center appcenter mobilecenter avalonia avaloniaui</PackageTags>
+    <PackageProjectUrl>https://github.com/SteamTools-Team/appcenter-sdk-dotnet</PackageProjectUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <Copyright>© Microsoft Corporation. All rights reserved.</Copyright>
+    <Company>© Microsoft Corporation. All rights reserved.</Company>
+    <RepositoryUrl>https://github.com/SteamTools-Team/appcenter-sdk-dotnet.git</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <NeutralLanguage>en-US</NeutralLanguage>
+    <PackageIconUrl>https://aka.ms/k76877</PackageIconUrl>
+  </PropertyGroup>
+  <Import Project="..\Microsoft.AppCenter.Windows.Shared\Microsoft.AppCenter.Windows.Shared.projitems" Label="Shared" />
+  <Import Project="..\Microsoft.AppCenter.Shared\Microsoft.AppCenter.Shared.projitems" Label="Shared" />
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="SQLitePCLRaw.bundle_green" Version="2.0.2" />
+    <PackageReference Include="Avalonia" Version="0.10.10" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(TargetFramework)' == 'netcoreapp3.0'">
+    <PackageReference Include="System.Management" Version="4.6.0" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="4.6.0" />
+    <!--<PackageReference Include="Microsoft.Windows.SDK.Contracts" Version="10.0.18362.2005" />-->
+    <PackageReference Include="Microsoft.Win32.SystemEvents" Version="4.6.0" />
+    <PackageReference Include="Microsoft.Win32.Registry" Version="4.6.0" />
+    <PackageReference Include="System.Drawing.Common" Version="4.6.0" />
+  </ItemGroup>
+  <ItemGroup Condition="$(TargetFramework.EndsWith('net5.0')) OR $(TargetFramework.StartsWith('net5.0-windows'))">
+    <PackageReference Include="System.Management" Version="5.0.0" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="5.0.0" />
+    <PackageReference Include="Microsoft.Win32.SystemEvents" Version="5.0.0" />
+    <PackageReference Include="Microsoft.Win32.Registry" Version="5.0.0" />
+  </ItemGroup>
+  <ItemGroup Condition="$(TargetFramework.EndsWith('net6.0')) OR $(TargetFramework.StartsWith('net6.0-windows'))">
+    <PackageReference Include="System.Management" Version="6.0.0-rc.2.21480.5" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="6.0.0-rc.2.21480.5" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(TargetFramework)'=='net461'">
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\Microsoft.AppCenter.WindowsDesktop\**\*.cs" />
+    <Compile Remove="..\Microsoft.AppCenter.WindowsDesktop\bin\**" />
+    <Compile Remove="..\Microsoft.AppCenter.WindowsDesktop\obj\**" />
+    <Compile Remove="..\Microsoft.AppCenter.WindowsDesktop\Utils\ApplicationLifecycleHelperWinUI.cs" />
+    <Compile Remove="..\Microsoft.AppCenter.WindowsDesktop\Utils\WpfHelper.cs" />
+  </ItemGroup>
+</Project>
