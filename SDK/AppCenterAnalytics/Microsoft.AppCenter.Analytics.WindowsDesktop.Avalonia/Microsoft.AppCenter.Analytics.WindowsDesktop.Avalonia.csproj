@@ -20,11 +20,11 @@
 		<Description>This package contains functionalities to collect session, device properties, events etc… for your application.</Description>
 		<NeutralLanguage>en-US</NeutralLanguage>
 		<PackageTags>app center appcenter analytics mobilecenter avalonia avaloniaui</PackageTags>
-		<PackageProjectUrl>https://github.com/SteamTools-Team/appcenter-sdk-dotnet</PackageProjectUrl>
+		<PackageProjectUrl>https://github.com/BeyondDimension/appcenter-sdk-dotnet</PackageProjectUrl>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
 		<Copyright>© Microsoft Corporation. All rights reserved.</Copyright>
 		<Company>© Microsoft Corporation. All rights reserved.</Company>
-		<RepositoryUrl>https://github.com/SteamTools-Team/appcenter-sdk-dotnet.git</RepositoryUrl>
+		<RepositoryUrl>https://github.com/BeyondDimension/appcenter-sdk-dotnet.git</RepositoryUrl>
 		<RepositoryType>git</RepositoryType>
 		<NeutralLanguage>en-US</NeutralLanguage>
 		<PackageIconUrl>https://aka.ms/k76877</PackageIconUrl>
