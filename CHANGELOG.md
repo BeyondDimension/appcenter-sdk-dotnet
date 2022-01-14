@@ -1,11 +1,26 @@
 # App Center SDK for .NET Change Log
 
-## Version 4.4.1 (Under active development)
+## Version 4.5.0
 
 ### App Center
 
 * **[Breaking change]** Remove `AppCenter.SetCustomProperties` API.
-* **[Fix]** Fix App Center SDK compatibility with projects targeting .NETCore3.0 and higher.
+* **[Fix]** Fix check on using `HttpClient` API instead of `ServicePointManager` in applications with target framework version `4.7.1` and higher.
+
+#### Windows
+
+* **[Fix]** Fix App Center SDK compatibility with project targets .NET Framework and .NET Core.
+* **[Fix]** Fix crash during getting device information when WMI service is disabled.
+* **[Fix]** Fix a deadlock after the application start caused by improper `StatefulMutex` usage on the Windows Server OS.
+
+#### Xamarin
+
+* **[Feature]** Add `AppCenter.setCountryCode(string)` API to set the country code manually.
+
+### App Center Analytics
+
+* **[Feature]** Increase the interval between sending logs from 3 to 6 seconds for the backend load optimization.
+* **[Feature]** Add `Analytics.EnableManualSessionTracker` and `Analytics.StartSession` APIs for tracking session manually.
 
 ___
 
