@@ -1,0 +1,53 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<TargetFrameworks>net6.0;net7.0</TargetFrameworks>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<UseWPF>false</UseWPF>
+		<LangVersion>latest</LangVersion>
+		<UseWindowsForms>false</UseWindowsForms>
+		<RootNamespace>Microsoft.AppCenter.Crashes</RootNamespace>
+		<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+		<DefineConstants>AIGIO_ANY_LIB;$(DefineConstants)</DefineConstants>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)' == 'Release'">
+		<PackageId>Aigio.Any.AppCenter.Crashes</PackageId>
+		<Authors>aigio + Microsoft</Authors>
+		<PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+		<Description>This package contains the basic functionalities that all App Center services use to communicate with the backend.</Description>
+		<NeutralLanguage>en-US</NeutralLanguage>
+		<PackageTags>app center appcenter mobilecenter avalonia avaloniaui</PackageTags>
+		<PackageProjectUrl>https://github.com/BeyondDimension/appcenter-sdk-dotnet</PackageProjectUrl>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<Copyright>© Microsoft Corporation. All rights reserved.</Copyright>
+		<Company>© Microsoft Corporation. All rights reserved.</Company>
+		<RepositoryUrl>https://github.com/BeyondDimension/appcenter-sdk-dotnet.git</RepositoryUrl>
+		<RepositoryType>git</RepositoryType>
+		<NeutralLanguage>en-US</NeutralLanguage>
+		<PackageIconUrl>https://aka.ms/k76877</PackageIconUrl>
+		<PublishRepositoryUrl>true</PublishRepositoryUrl>
+		<EmbedUntrackedSources>true</EmbedUntrackedSources>
+		<IncludeSymbols>true</IncludeSymbols>
+		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
+		<PackageOutputPath>$(MSBuildProjectDirectory)\..\..\..\pkg</PackageOutputPath>
+	</PropertyGroup>
+	<ItemGroup>
+		<PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.1.1" PrivateAssets="All" />
+	</ItemGroup>
+	<ItemGroup>
+		<Compile Include="..\Microsoft.AppCenter.Crashes.Shared\**\*.cs" />
+		<Compile Remove="..\Microsoft.AppCenter.Crashes.Shared\bin\**" />
+		<Compile Remove="..\Microsoft.AppCenter.Crashes.Shared\obj\**" />
+		<Compile Include="..\Microsoft.AppCenter.Crashes.Shared.Windows\**\*.cs" />
+		<Compile Remove="..\Microsoft.AppCenter.Crashes.Shared.Windows\bin\**" />
+		<Compile Remove="..\Microsoft.AppCenter.Crashes.Shared.Windows\obj\**" />
+		<Compile Include="..\Microsoft.AppCenter.Crashes.WindowsDesktop\**\*.cs" />
+		<Compile Remove="..\Microsoft.AppCenter.Crashes.WindowsDesktop\bin\**" />
+		<Compile Remove="..\Microsoft.AppCenter.Crashes.WindowsDesktop\obj\**" />
+		<Compile Remove="..\Microsoft.AppCenter.Crashes.WindowsDesktop\Utils\ProcessInformation.cs" />
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\..\AppCenter\Microsoft.AppCenter.Any\Microsoft.AppCenter.Any.csproj" />
+	</ItemGroup>
+</Project>
