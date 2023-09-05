@@ -9,6 +9,8 @@ using Microsoft.AppCenter.Ingestion.Models.Serialization;
 using Microsoft.AppCenter.Utils;
 using Microsoft.AppCenter.Utils.Files;
 using Microsoft.AppCenter.Windows.Shared.Utils;
+using Directory = Microsoft.AppCenter.Utils.Files.Directory;
+using File = Microsoft.AppCenter.Utils.Files.File;
 
 namespace Microsoft.AppCenter.Crashes.Utils
 {
