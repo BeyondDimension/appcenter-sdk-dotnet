@@ -9,9 +9,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Contoso.WinForms.Demo.Properties;
-using Microsoft.AppCenter;
-using Microsoft.AppCenter.Analytics;
-using Microsoft.AppCenter.Crashes;
+using BD.AppCenter;
+using BD.AppCenter.Analytics;
+using BD.AppCenter.Crashes;
 
 namespace Contoso.WinForms.Demo
 {

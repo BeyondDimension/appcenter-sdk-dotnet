@@ -2,9 +2,9 @@
 // Licensed under the MIT License.
 
 using Contoso.WinForms.Demo.Properties;
-using Microsoft.AppCenter;
-using Microsoft.AppCenter.Analytics;
-using Microsoft.AppCenter.Crashes;
+using BD.AppCenter;
+using BD.AppCenter.Analytics;
+using BD.AppCenter.Crashes;
 using System;
 using System.Collections.Generic;
 using System.IO;

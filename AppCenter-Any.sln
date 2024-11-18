@@ -15,41 +15,41 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AppCenterCrashes", "AppCent
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AppCenterDistribute", "AppCenterDistribute", "{44E43AB9-E48B-4162-BEAA-2D59651DB6FA}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.AppCenter", "SDK\AppCenter\Microsoft.AppCenter\Microsoft.AppCenter.csproj", "{3FE04B97-48DE-4895-8612-ECBDFEBD917C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BD.AppCenter", "SDK\AppCenter\BD.AppCenter\BD.AppCenter.csproj", "{3FE04B97-48DE-4895-8612-ECBDFEBD917C}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.AppCenter.WindowsDesktop", "SDK\AppCenter\Microsoft.AppCenter.WindowsDesktop\Microsoft.AppCenter.WindowsDesktop.csproj", "{1E9EC0AA-3E32-4551-80C4-E4F3E53D7590}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BD.AppCenter.WindowsDesktop", "SDK\AppCenter\BD.AppCenter.WindowsDesktop\BD.AppCenter.WindowsDesktop.csproj", "{1E9EC0AA-3E32-4551-80C4-E4F3E53D7590}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.AppCenter.Analytics", "SDK\AppCenterAnalytics\Microsoft.AppCenter.Analytics\Microsoft.AppCenter.Analytics.csproj", "{0F13E444-717E-460A-BDE7-8AD537F0A418}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BD.AppCenter.Analytics", "SDK\AppCenterAnalytics\BD.AppCenter.Analytics\BD.AppCenter.Analytics.csproj", "{0F13E444-717E-460A-BDE7-8AD537F0A418}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.AppCenter.Analytics.WindowsDesktop", "SDK\AppCenterAnalytics\Microsoft.AppCenter.Analytics.WindowsDesktop\Microsoft.AppCenter.Analytics.WindowsDesktop.csproj", "{1F6C139A-29BB-4E74-8DF2-F8CCAB399A67}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BD.AppCenter.Analytics.WindowsDesktop", "SDK\AppCenterAnalytics\BD.AppCenter.Analytics.WindowsDesktop\BD.AppCenter.Analytics.WindowsDesktop.csproj", "{1F6C139A-29BB-4E74-8DF2-F8CCAB399A67}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.AppCenter.Crashes", "SDK\AppCenterCrashes\Microsoft.AppCenter.Crashes\Microsoft.AppCenter.Crashes.csproj", "{302F0881-77AE-4CCE-ACF4-930AD5D4FB08}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BD.AppCenter.Crashes", "SDK\AppCenterCrashes\BD.AppCenter.Crashes\BD.AppCenter.Crashes.csproj", "{302F0881-77AE-4CCE-ACF4-930AD5D4FB08}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.AppCenter.Crashes.WindowsDesktop", "SDK\AppCenterCrashes\Microsoft.AppCenter.Crashes.WindowsDesktop\Microsoft.AppCenter.Crashes.WindowsDesktop.csproj", "{DC55C086-714D-4E2F-B6CE-3C14BC3B6646}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BD.AppCenter.Crashes.WindowsDesktop", "SDK\AppCenterCrashes\BD.AppCenter.Crashes.WindowsDesktop\BD.AppCenter.Crashes.WindowsDesktop.csproj", "{DC55C086-714D-4E2F-B6CE-3C14BC3B6646}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.AppCenter.Distribute", "SDK\AppCenterDistribute\Microsoft.AppCenter.Distribute\Microsoft.AppCenter.Distribute.csproj", "{41FEBC72-C12B-47E1-B6F6-51D50158C825}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BD.AppCenter.Distribute", "SDK\AppCenterDistribute\BD.AppCenter.Distribute\BD.AppCenter.Distribute.csproj", "{41FEBC72-C12B-47E1-B6F6-51D50158C825}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microsoft.AppCenter.Crashes.Test.Windows", "Tests\Microsoft.AppCenter.Crashes.Test.Windows\Microsoft.AppCenter.Crashes.Test.Windows.csproj", "{1F1DBE94-AAEE-4A43-8586-EF8743672587}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BD.AppCenter.Crashes.Test.Windows", "Tests\BD.AppCenter.Crashes.Test.Windows\BD.AppCenter.Crashes.Test.Windows.csproj", "{1F1DBE94-AAEE-4A43-8586-EF8743672587}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microsoft.AppCenter.Test.Windows", "Tests\Microsoft.AppCenter.Test.Windows\Microsoft.AppCenter.Test.Windows.csproj", "{E52C5D53-4485-4350-9F4E-AFF85CC18FD7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BD.AppCenter.Test.Windows", "Tests\BD.AppCenter.Test.Windows\BD.AppCenter.Test.Windows.csproj", "{E52C5D53-4485-4350-9F4E-AFF85CC18FD7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microsoft.AppCenter.Analytics.Test.Windows", "Tests\Microsoft.AppCenter.Analytics.Test.Windows\Microsoft.AppCenter.Analytics.Test.Windows.csproj", "{4CFBAE12-D17F-49FF-B41D-C861EEB965C4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BD.AppCenter.Analytics.Test.Windows", "Tests\BD.AppCenter.Analytics.Test.Windows\BD.AppCenter.Analytics.Test.Windows.csproj", "{4CFBAE12-D17F-49FF-B41D-C861EEB965C4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microsoft.AppCenter.Test.WindowsDesktop", "Tests\Microsoft.AppCenter.Test.WindowsDesktop\Microsoft.AppCenter.Test.WindowsDesktop.csproj", "{C4674357-EFBA-43AA-9DB8-DE62A3309EB6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BD.AppCenter.Test.WindowsDesktop", "Tests\BD.AppCenter.Test.WindowsDesktop\BD.AppCenter.Test.WindowsDesktop.csproj", "{C4674357-EFBA-43AA-9DB8-DE62A3309EB6}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.AppCenter.Test.WindowsDesktop.NetCore", "Tests\Microsoft.AppCenter.Test.WindowsDesktop.NetCore\Microsoft.AppCenter.Test.WindowsDesktop.NetCore.csproj", "{2FFFF8C2-E190-4B83-9AD8-19F0E2AC6088}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BD.AppCenter.Test.WindowsDesktop.NetCore", "Tests\BD.AppCenter.Test.WindowsDesktop.NetCore\BD.AppCenter.Test.WindowsDesktop.NetCore.csproj", "{2FFFF8C2-E190-4B83-9AD8-19F0E2AC6088}"
 EndProject
-Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Microsoft.AppCenter.Test.WindowsDesktop.Shared", "Tests\Microsoft.AppCenter.Test.WindowsDesktop.Shared\Microsoft.AppCenter.Test.WindowsDesktop.Shared.shproj", "{09F38506-8DEF-431D-A749-DF7E73A719F0}"
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "BD.AppCenter.Test.WindowsDesktop.Shared", "Tests\BD.AppCenter.Test.WindowsDesktop.Shared\BD.AppCenter.Test.WindowsDesktop.Shared.shproj", "{09F38506-8DEF-431D-A749-DF7E73A719F0}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.AppCenter.Test", "Tests\Microsoft.AppCenter.Test\Microsoft.AppCenter.Test.csproj", "{4887A332-6046-497F-AFD5-6A13A4824B8E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BD.AppCenter.Test", "Tests\BD.AppCenter.Test\BD.AppCenter.Test.csproj", "{4887A332-6046-497F-AFD5-6A13A4824B8E}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.AppCenter.Analytics.Test", "Tests\Microsoft.AppCenter.Analytics.Test\Microsoft.AppCenter.Analytics.Test.csproj", "{2428F994-6B65-4949-90F2-70CD39DEA5D3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BD.AppCenter.Analytics.Test", "Tests\BD.AppCenter.Analytics.Test\BD.AppCenter.Analytics.Test.csproj", "{2428F994-6B65-4949-90F2-70CD39DEA5D3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microsoft.AppCenter.Any", "SDK\AppCenter\Microsoft.AppCenter.Any\Microsoft.AppCenter.Any.csproj", "{728CD335-27D9-4111-AB78-68ABDECF048D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BD.AppCenter.Any", "SDK\AppCenter\BD.AppCenter.Any\BD.AppCenter.Any.csproj", "{728CD335-27D9-4111-AB78-68ABDECF048D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microsoft.AppCenter.Analytics.Any", "SDK\AppCenterAnalytics\Microsoft.AppCenter.Analytics.Any\Microsoft.AppCenter.Analytics.Any.csproj", "{E5E45340-E189-4118-ACA3-6ECC0482ABCD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BD.AppCenter.Analytics.Any", "SDK\AppCenterAnalytics\BD.AppCenter.Analytics.Any\BD.AppCenter.Analytics.Any.csproj", "{E5E45340-E189-4118-ACA3-6ECC0482ABCD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microsoft.AppCenter.Crashes.Any", "SDK\AppCenterCrashes\Microsoft.AppCenter.Crashes.Any\Microsoft.AppCenter.Crashes.Any.csproj", "{743BBEC7-1A05-4DED-87EA-AEEF36C0F58D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BD.AppCenter.Crashes.Any", "SDK\AppCenterCrashes\BD.AppCenter.Crashes.Any\BD.AppCenter.Crashes.Any.csproj", "{743BBEC7-1A05-4DED-87EA-AEEF36C0F58D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -437,8 +437,8 @@ Global
 		SolutionGuid = {328868E2-F749-412D-B82F-84A683A1719C}
 	EndGlobalSection
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
-		Tests\Microsoft.AppCenter.Test.WindowsDesktop.Shared\Microsoft.AppCenter.Test.WindowsDesktop.Shared.projitems*{09f38506-8def-431d-a749-df7e73a719f0}*SharedItemsImports = 13
-		Tests\Microsoft.AppCenter.Test.WindowsDesktop.Shared\Microsoft.AppCenter.Test.WindowsDesktop.Shared.projitems*{2ffff8c2-e190-4b83-9ad8-19f0e2ac6088}*SharedItemsImports = 5
-		Tests\Microsoft.AppCenter.Test.WindowsDesktop.Shared\Microsoft.AppCenter.Test.WindowsDesktop.Shared.projitems*{c4674357-efba-43aa-9db8-de62a3309eb6}*SharedItemsImports = 4
+		Tests\BD.AppCenter.Test.WindowsDesktop.Shared\BD.AppCenter.Test.WindowsDesktop.Shared.projitems*{09f38506-8def-431d-a749-df7e73a719f0}*SharedItemsImports = 13
+		Tests\BD.AppCenter.Test.WindowsDesktop.Shared\BD.AppCenter.Test.WindowsDesktop.Shared.projitems*{2ffff8c2-e190-4b83-9ad8-19f0e2ac6088}*SharedItemsImports = 5
+		Tests\BD.AppCenter.Test.WindowsDesktop.Shared\BD.AppCenter.Test.WindowsDesktop.Shared.projitems*{c4674357-efba-43aa-9db8-de62a3309eb6}*SharedItemsImports = 4
 	EndGlobalSection
 EndGlobal

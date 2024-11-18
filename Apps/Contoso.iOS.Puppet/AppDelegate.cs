@@ -5,10 +5,10 @@
 
 using System;
 using Foundation;
-using Microsoft.AppCenter;
-using Microsoft.AppCenter.Analytics;
-using Microsoft.AppCenter.Crashes;
-using Microsoft.AppCenter.Distribute;
+using BD.AppCenter;
+using BD.AppCenter.Analytics;
+using BD.AppCenter.Crashes;
+using BD.AppCenter.Distribute;
 using UIKit;
 
 namespace Contoso.iOS.Puppet

@@ -2,7 +2,7 @@
 // Copyright (c) Microsoft Corporation.  All rights reserved.
 // </auto-generated>
 
-namespace Microsoft.AppCenter.Ingestion.Models
+namespace BD.AppCenter.Ingestion.Models
 {
     using Newtonsoft.Json;
     using System.Linq;

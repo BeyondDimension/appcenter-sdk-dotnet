@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package>
   <metadata>
-    <id>Microsoft.AppCenter.Crashes</id>
+    <id>BD.AppCenter.Crashes</id>
     <title>App Center Crashes</title>
     <authors>Microsoft</authors>
     <owners>microsoft,appcenter</owners>
@@ -16,10 +16,10 @@
     <iconUrl>https://aka.ms/k76877</iconUrl>
     <dependencies>
       <group>
-        <dependency id="Microsoft.AppCenter" version="$version$" />
+        <dependency id="BD.AppCenter" version="$version$" />
       </group>
       <group targetFramework="uap10.0.16299">
-        <dependency id="Microsoft.AppCenter" version="$version$" />
+        <dependency id="BD.AppCenter" version="$version$" />
         <dependency id="System.Reflection.Metadata" version="1.7.0" />
       </group>
     </dependencies>
@@ -28,46 +28,46 @@
   <files>
 
     <!-- .NET Standard -->
-    <file src="$netstandard_dir$/Microsoft.AppCenter.Crashes.dll" target="lib/netstandard2.0" />
-    <file src="$netstandard_dir$/Microsoft.AppCenter.Crashes.xml" target="lib/netstandard2.0" />
+    <file src="$netstandard_dir$/BD.AppCenter.Crashes.dll" target="lib/netstandard2.0" />
+    <file src="$netstandard_dir$/BD.AppCenter.Crashes.xml" target="lib/netstandard2.0" />
 
     <!-- Android -->
-    <file src="$android_dir$/Microsoft.AppCenter.Crashes.dll" target="lib/MonoAndroid10.0" />
-    <file src="$android_dir$/Microsoft.AppCenter.Crashes.xml" target="lib/MonoAndroid10.0" />
-    <file src="$android_net8_dir$/Microsoft.AppCenter.Crashes.dll" target="lib/net8.0-android29.0" />
-    <file src="$android_net8_dir$/Microsoft.AppCenter.Crashes.xml" target="lib/net8.0-android29.0" />
+    <file src="$android_dir$/BD.AppCenter.Crashes.dll" target="lib/MonoAndroid10.0" />
+    <file src="$android_dir$/BD.AppCenter.Crashes.xml" target="lib/MonoAndroid10.0" />
+    <file src="$android_net8_dir$/BD.AppCenter.Crashes.dll" target="lib/net8.0-android29.0" />
+    <file src="$android_net8_dir$/BD.AppCenter.Crashes.xml" target="lib/net8.0-android29.0" />
     <file src="$android_net8_dir$/appcenter-crashes-release.aar" target="lib/net8.0-android29.0" />
 
     <!-- iOS -->
-    <file src="$ios_dir$/Microsoft.AppCenter.Crashes.dll" target="lib/Xamarin.iOS10" />
-    <file src="$ios_dir$/Microsoft.AppCenter.Crashes.xml" target="lib/Xamarin.iOS10" />
-    <file src="$ios_net8_dir$/Microsoft.AppCenter.Crashes.dll" target="lib/net8.0-ios9.0" />
-    <file src="$ios_net8_dir$/Microsoft.AppCenter.Crashes.xml" target="lib/net8.0-ios9.0" />
+    <file src="$ios_dir$/BD.AppCenter.Crashes.dll" target="lib/Xamarin.iOS10" />
+    <file src="$ios_dir$/BD.AppCenter.Crashes.xml" target="lib/Xamarin.iOS10" />
+    <file src="$ios_net8_dir$/BD.AppCenter.Crashes.dll" target="lib/net8.0-ios9.0" />
+    <file src="$ios_net8_dir$/BD.AppCenter.Crashes.xml" target="lib/net8.0-ios9.0" />
 
     <!-- macOS -->
-    <file src="$macos_dir$/Microsoft.AppCenter.Crashes.dll" target="lib/Xamarin.Mac20" />
-    <file src="$macos_dir$/Microsoft.AppCenter.Crashes.xml" target="lib/Xamarin.Mac20" />
-    <file src="$macos_net8_dir$/Microsoft.AppCenter.Crashes.dll" target="lib/net8.0-macos10.10" />
-    <file src="$macos_net8_dir$/Microsoft.AppCenter.Crashes.xml" target="lib/net8.0-macos10.10" />
-    <file src="$maccatalyst_net8_dir$/Microsoft.AppCenter.Crashes.dll" target="lib/net8.0-maccatalyst10.10" />
-    <file src="$maccatalyst_net8_dir$/Microsoft.AppCenter.Crashes.xml" target="lib/net8.0-maccatalyst10.10" />
+    <file src="$macos_dir$/BD.AppCenter.Crashes.dll" target="lib/Xamarin.Mac20" />
+    <file src="$macos_dir$/BD.AppCenter.Crashes.xml" target="lib/Xamarin.Mac20" />
+    <file src="$macos_net8_dir$/BD.AppCenter.Crashes.dll" target="lib/net8.0-macos10.10" />
+    <file src="$macos_net8_dir$/BD.AppCenter.Crashes.xml" target="lib/net8.0-macos10.10" />
+    <file src="$maccatalyst_net8_dir$/BD.AppCenter.Crashes.dll" target="lib/net8.0-maccatalyst10.10" />
+    <file src="$maccatalyst_net8_dir$/BD.AppCenter.Crashes.xml" target="lib/net8.0-maccatalyst10.10" />
 
     <!-- UWP -->
-    <file src="$uwp_dir$/Microsoft.AppCenter.Crashes.dll" target="lib/uap10.0.16299" />
-    <file src="$uwp_dir$/Microsoft.AppCenter.Crashes.xml" target="lib/uap10.0.16299" />
+    <file src="$uwp_dir$/BD.AppCenter.Crashes.dll" target="lib/uap10.0.16299" />
+    <file src="$uwp_dir$/BD.AppCenter.Crashes.xml" target="lib/uap10.0.16299" />
 
     <!-- Windows Classic Desktop (WPF and WinForms) for .NET Framework -->
-    <file src="$windows_net462_dir$/Microsoft.AppCenter.Crashes.dll" target="lib/net462" />
-    <file src="$windows_net462_dir$/Microsoft.AppCenter.Crashes.xml" target="lib/net462" />
-    <file src="$windows_net472_dir$/Microsoft.AppCenter.Crashes.dll" target="lib/net472" />
-    <file src="$windows_net472_dir$/Microsoft.AppCenter.Crashes.xml" target="lib/net472" />
+    <file src="$windows_net462_dir$/BD.AppCenter.Crashes.dll" target="lib/net462" />
+    <file src="$windows_net462_dir$/BD.AppCenter.Crashes.xml" target="lib/net462" />
+    <file src="$windows_net472_dir$/BD.AppCenter.Crashes.dll" target="lib/net472" />
+    <file src="$windows_net472_dir$/BD.AppCenter.Crashes.xml" target="lib/net472" />
 
     <!-- Windows Desktop for .NET Core and .NET 5 -->
-    <file src="$windows_netcore_dir$/Microsoft.AppCenter.Crashes.dll" target="lib/netcoreapp3.1" />
-    <file src="$windows_netcore_dir$/Microsoft.AppCenter.Crashes.xml" target="lib/netcoreapp3.1" />
+    <file src="$windows_netcore_dir$/BD.AppCenter.Crashes.dll" target="lib/netcoreapp3.1" />
+    <file src="$windows_netcore_dir$/BD.AppCenter.Crashes.xml" target="lib/netcoreapp3.1" />
 
     <!-- Windows Desktop for WinUI and modern OS targets -->
-    <file src="$windows_net6_dir$/Microsoft.AppCenter.Crashes.dll" target="lib/net6.0-windows10.0.17763.0" />
-    <file src="$windows_net6_dir$/Microsoft.AppCenter.Crashes.xml" target="lib/net6.0-windows10.0.17763.0" />
+    <file src="$windows_net6_dir$/BD.AppCenter.Crashes.dll" target="lib/net6.0-windows10.0.17763.0" />
+    <file src="$windows_net6_dir$/BD.AppCenter.Crashes.xml" target="lib/net6.0-windows10.0.17763.0" />
   </files>
 </package>

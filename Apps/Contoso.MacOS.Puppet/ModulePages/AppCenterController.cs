@@ -45,8 +45,8 @@ namespace Contoso.MacOS.Puppet.ModulePages
         public override void ViewDidAppear()
         {
             base.ViewDidAppear();
-            IsAppCenterEnabledSwitch.StringValue = Microsoft.AppCenter.AppCenter.IsEnabledAsync().Result ? On : Off;
-            isNetworkRequestAllowedSwitch.StringValue = Microsoft.AppCenter.AppCenter.IsNetworkRequestsAllowed ? On : Off;
+            IsAppCenterEnabledSwitch.StringValue = BD.AppCenter.AppCenter.IsEnabledAsync().Result ? On : Off;
+            isNetworkRequestAllowedSwitch.StringValue = BD.AppCenter.AppCenter.IsNetworkRequestsAllowed ? On : Off;
 
             // Set max storage size value.
             plist = NSUserDefaults.StandardUserDefaults;
@@ -60,14 +60,14 @@ namespace Contoso.MacOS.Puppet.ModulePages
         partial void IsAppCenterEnabled(NSSwitch sender)
         {
             var IsAppCenterEnabled = sender.StringValue.ToLower().Equals(On);
-            Microsoft.AppCenter.AppCenter.SetEnabledAsync(IsAppCenterEnabled).Wait();
-            IsAppCenterEnabledSwitch.StringValue = Microsoft.AppCenter.AppCenter.IsEnabledAsync().Result ? On : Off;
+            BD.AppCenter.AppCenter.SetEnabledAsync(IsAppCenterEnabled).Wait();
+            IsAppCenterEnabledSwitch.StringValue = BD.AppCenter.AppCenter.IsEnabledAsync().Result ? On : Off;
         }
 
         partial void IsNetworkRequestsAllowed(NSSwitch sender)
         {
             var isNetworkAllowed = sender.StringValue.ToLower().Equals(On);
-            Microsoft.AppCenter.AppCenter.IsNetworkRequestsAllowed = isNetworkAllowed;
+            BD.AppCenter.AppCenter.IsNetworkRequestsAllowed = isNetworkAllowed;
         }
 
         partial void SaveMaxStorageSizeText(NSButton sender)
@@ -76,19 +76,19 @@ namespace Contoso.MacOS.Puppet.ModulePages
             int.TryParse(size, out var result);
             if (result != 0)
             {
-                Microsoft.AppCenter.AppCenter.SetMaxStorageSizeAsync(result).Wait();
+                BD.AppCenter.AppCenter.SetMaxStorageSizeAsync(result).Wait();
                 plist.SetInt(result, Constants.StorageSizeKey);
             }
             else
             {
-                Microsoft.AppCenter.AppCenterLog.Error(LogTag, "Wrong number value for the max storage size.");
+                BD.AppCenter.AppCenterLog.Error(LogTag, "Wrong number value for the max storage size.");
             }
         }
 
         partial void UserIdTextChanged(NSTextField sender)
         {
             var userId = string.IsNullOrEmpty(sender.AccessibilityValue) ? null : sender.AccessibilityValue;
-            Microsoft.AppCenter.AppCenter.SetUserId(userId);
+            BD.AppCenter.AppCenter.SetUserId(userId);
         }
 
         //strongly typed view accessor

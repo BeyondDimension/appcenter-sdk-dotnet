@@ -125,17 +125,17 @@
       <Project>{92313C69-3BC4-4276-A1C8-100C86183F12}</Project>
       <Name>Contoso.Forms.Puppet</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\SDK\AppCenterAnalytics\Microsoft.AppCenter.Analytics.Apple\Microsoft.AppCenter.Analytics.Apple.Mono.csproj">
-      <Name>Microsoft.AppCenter.Analytics.Apple.Mono</Name>
+    <ProjectReference Include="..\..\..\SDK\AppCenterAnalytics\BD.AppCenter.Analytics.Apple\BD.AppCenter.Analytics.Apple.Mono.csproj">
+      <Name>BD.AppCenter.Analytics.Apple.Mono</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\SDK\AppCenter\Microsoft.AppCenter.Apple\Microsoft.AppCenter.Apple.Mono.csproj">
-      <Name>Microsoft.AppCenter.Apple.Mono</Name>
+    <ProjectReference Include="..\..\..\SDK\AppCenter\BD.AppCenter.Apple\BD.AppCenter.Apple.Mono.csproj">
+      <Name>BD.AppCenter.Apple.Mono</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\SDK\AppCenterCrashes\Microsoft.AppCenter.Crashes.Apple\Microsoft.AppCenter.Crashes.Apple.Mono.csproj">
-      <Name>Microsoft.AppCenter.Crashes.Apple.Mono</Name>
+    <ProjectReference Include="..\..\..\SDK\AppCenterCrashes\BD.AppCenter.Crashes.Apple\BD.AppCenter.Crashes.Apple.Mono.csproj">
+      <Name>BD.AppCenter.Crashes.Apple.Mono</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\SDK\AppCenterDistribute\Microsoft.AppCenter.Distribute.Apple\Microsoft.AppCenter.Distribute.Apple.Mono.csproj">
-      <Name>Microsoft.AppCenter.Distribute.Apple.Mono</Name>
+    <ProjectReference Include="..\..\..\SDK\AppCenterDistribute\BD.AppCenter.Distribute.Apple\BD.AppCenter.Distribute.Apple.Mono.csproj">
+      <Name>BD.AppCenter.Distribute.Apple.Mono</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />

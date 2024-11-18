@@ -7,10 +7,10 @@ using Android.Content.PM;
 using Android.OS;
 using Android.App;
 using AndroidX.AppCompat.App;
-using Microsoft.AppCenter;
-using Microsoft.AppCenter.Analytics;
-using Microsoft.AppCenter.Crashes;
-using Microsoft.AppCenter.Distribute;
+using BD.AppCenter;
+using BD.AppCenter.Analytics;
+using BD.AppCenter.Crashes;
+using BD.AppCenter.Distribute;
 using Google.Android.Material.BottomNavigation;
 using Android.Views;
 

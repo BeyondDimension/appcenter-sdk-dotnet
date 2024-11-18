@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package>
   <metadata>
-    <id>Microsoft.AppCenter.Distribute</id>
+    <id>BD.AppCenter.Distribute</id>
     <title>App Center Distribute</title>
     <authors>Microsoft</authors>
     <owners>microsoft,appcenter</owners>
@@ -15,28 +15,28 @@
     <license type="expression">MIT</license>
     <iconUrl>https://aka.ms/k76877</iconUrl>
     <dependencies>
-      <dependency id="Microsoft.AppCenter" version="$version$" />
+      <dependency id="BD.AppCenter" version="$version$" />
     </dependencies>
     <version>$version$</version>
   </metadata>
   <files>
 
     <!-- .NET Standard -->
-    <file src="$netstandard_dir$/Microsoft.AppCenter.Distribute.dll" target="lib/netstandard2.0" />
-    <file src="$netstandard_dir$/Microsoft.AppCenter.Distribute.xml" target="lib/netstandard2.0" />
+    <file src="$netstandard_dir$/BD.AppCenter.Distribute.dll" target="lib/netstandard2.0" />
+    <file src="$netstandard_dir$/BD.AppCenter.Distribute.xml" target="lib/netstandard2.0" />
 
     <!-- Android -->
-    <file src="$android_dir$/Microsoft.AppCenter.Distribute.dll" target="lib/MonoAndroid10.0" />
-    <file src="$android_dir$/Microsoft.AppCenter.Distribute.xml" target="lib/MonoAndroid10.0" />
-    <file src="$android_net8_dir$/Microsoft.AppCenter.Distribute.dll" target="lib/net8.0-android29.0" />
-    <file src="$android_net8_dir$/Microsoft.AppCenter.Distribute.xml" target="lib/net8.0-android29.0" />
+    <file src="$android_dir$/BD.AppCenter.Distribute.dll" target="lib/MonoAndroid10.0" />
+    <file src="$android_dir$/BD.AppCenter.Distribute.xml" target="lib/MonoAndroid10.0" />
+    <file src="$android_net8_dir$/BD.AppCenter.Distribute.dll" target="lib/net8.0-android29.0" />
+    <file src="$android_net8_dir$/BD.AppCenter.Distribute.xml" target="lib/net8.0-android29.0" />
     <file src="$android_net8_dir$/appcenter-distribute-release.aar" target="lib/net8.0-android29.0" />
 
     <!-- iOS -->
-    <file src="$ios_dir$/Microsoft.AppCenter.Distribute.dll" target="lib/Xamarin.iOS10" />
-    <file src="$ios_dir$/Microsoft.AppCenter.Distribute.xml" target="lib/Xamarin.iOS10" />
-    <file src="$ios_net8_dir$/Microsoft.AppCenter.Distribute.dll" target="lib/net8.0-ios9.0" />
-    <file src="$ios_net8_dir$/Microsoft.AppCenter.Distribute.xml" target="lib/net8.0-ios9.0" />
+    <file src="$ios_dir$/BD.AppCenter.Distribute.dll" target="lib/Xamarin.iOS10" />
+    <file src="$ios_dir$/BD.AppCenter.Distribute.xml" target="lib/Xamarin.iOS10" />
+    <file src="$ios_net8_dir$/BD.AppCenter.Distribute.dll" target="lib/net8.0-ios9.0" />
+    <file src="$ios_net8_dir$/BD.AppCenter.Distribute.xml" target="lib/net8.0-ios9.0" />
 
   </files>
 </package>

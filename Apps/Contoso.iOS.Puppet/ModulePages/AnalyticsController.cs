@@ -5,8 +5,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using Foundation;
-using Microsoft.AppCenter;
-using Microsoft.AppCenter.Analytics;
+using BD.AppCenter;
+using BD.AppCenter.Analytics;
 using UIKit;
 
 namespace Contoso.iOS.Puppet

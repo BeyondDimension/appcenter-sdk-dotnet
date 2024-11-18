@@ -6,10 +6,10 @@ using Android.App;
 using Android.Content;
 using Android.Content.PM;
 using Android.OS;
-using Microsoft.AppCenter;
-using Microsoft.AppCenter.Analytics.Android.Channel;
-using Microsoft.AppCenter.Android.Ingestion.Models;
-using AndroidAnalytics = Microsoft.AppCenter.Analytics.Android.Analytics;
+using BD.AppCenter;
+using BD.AppCenter.Analytics.Android.Channel;
+using BD.AppCenter.Android.Ingestion.Models;
+using AndroidAnalytics = BD.AppCenter.Analytics.Android.Analytics;
 using Xamarin.Forms;
 using Contoso.Forms.Demo.Droid;
 
@@ -22,7 +22,7 @@ namespace Contoso.Forms.Demo.Droid
     {
         public static readonly int FileAttachmentId = 1;
 
-        private const string CrashesUserConfirmationStorageKey = "com.microsoft.appcenter.crashes.always.send";
+        private const string CrashesUserConfirmationStorageKey = "com.BD.AppCenter.crashes.always.send";
 
         public TaskCompletionSource<string> FileAttachmentTaskCompletionSource { set; get; }
 

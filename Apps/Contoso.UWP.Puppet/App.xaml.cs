@@ -2,7 +2,7 @@
 // Licensed under the MIT License.
 
 using System;
-using Microsoft.AppCenter;
+using BD.AppCenter;
 using Windows.ApplicationModel;
 using Windows.ApplicationModel.Activation;
 using Windows.ApplicationModel.Background;
@@ -10,8 +10,8 @@ using Windows.ApplicationModel.Core;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Navigation;
-using Microsoft.AppCenter.Analytics;
-using Microsoft.AppCenter.Crashes;
+using BD.AppCenter.Analytics;
+using BD.AppCenter.Crashes;
 using System.Threading.Tasks;
 
 namespace Contoso.UWP.Puppet

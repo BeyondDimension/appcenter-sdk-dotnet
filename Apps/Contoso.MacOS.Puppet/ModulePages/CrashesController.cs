@@ -46,20 +46,20 @@ namespace Contoso.MacOS.Puppet.ModulePages
         public override void ViewDidAppear()
         {
             base.ViewDidAppear();
-            IsCrashesEnabledSwitch.StringValue = Microsoft.AppCenter.Crashes.Crashes.IsEnabledAsync().Result ? On : Off;
-            IsCrashesEnabledSwitch.Enabled = Microsoft.AppCenter.AppCenter.IsEnabledAsync().Result;
+            IsCrashesEnabledSwitch.StringValue = BD.AppCenter.Crashes.Crashes.IsEnabledAsync().Result ? On : Off;
+            IsCrashesEnabledSwitch.Enabled = BD.AppCenter.AppCenter.IsEnabledAsync().Result;
         }
 
         partial void IsCrashesEnabled(NSSwitch sender)
         {
             var isAnalyticsEnabled = sender.AccessibilityValue.ToLower().Equals("on");
-            Microsoft.AppCenter.Crashes.Crashes.SetEnabledAsync(isAnalyticsEnabled).Wait();
-            IsCrashesEnabledSwitch.StringValue = Microsoft.AppCenter.Crashes.Crashes.IsEnabledAsync().Result ? On : Off;
+            BD.AppCenter.Crashes.Crashes.SetEnabledAsync(isAnalyticsEnabled).Wait();
+            IsCrashesEnabledSwitch.StringValue = BD.AppCenter.Crashes.Crashes.IsEnabledAsync().Result ? On : Off;
         }
 
         partial void TestCrash(NSButton sender)
         {
-            Microsoft.AppCenter.Crashes.Crashes.GenerateTestCrash();
+            BD.AppCenter.Crashes.Crashes.GenerateTestCrash();
         }
 
         partial void DivideByZero(NSButton sender)
@@ -78,7 +78,7 @@ namespace Contoso.MacOS.Puppet.ModulePages
             }
             catch (NullReferenceException e)
             {
-                Microsoft.AppCenter.Crashes.Crashes.TrackError(e);
+                BD.AppCenter.Crashes.Crashes.TrackError(e);
             }
         }
 

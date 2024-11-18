@@ -2,10 +2,10 @@
   <PropertyGroup>
 
     <!-- Assembly information. -->
-    <Product>Microsoft.AppCenter.Distribute</Product>
-    <RootNamespace>Microsoft.AppCenter.Distribute</RootNamespace>
-    <AssemblyName>Microsoft.AppCenter.Distribute</AssemblyName>
-    <AssemblyTitle>Microsoft.AppCenter.Distribute</AssemblyTitle>
+    <Product>BD.AppCenter.Distribute</Product>
+    <RootNamespace>BD.AppCenter.Distribute</RootNamespace>
+    <AssemblyName>BD.AppCenter.Distribute</AssemblyName>
+    <AssemblyTitle>BD.AppCenter.Distribute</AssemblyTitle>
   </PropertyGroup>
   <ImportGroup>
   

@@ -3,15 +3,15 @@
 
 using System;
 using Foundation;
-using Microsoft.AppCenter.Test.Functional;
-using Microsoft.AppCenter.Test.Functional.Distribute;
+using BD.AppCenter.Test.Functional;
+using BD.AppCenter.Test.Functional.Distribute;
 using UIKit;
 using Xunit.Runner;
 using Xunit.Runners.ResultChannels;
 
 namespace Contoso.Test.Functional.iOS
 {
-    using iOSKeyChainUtil = Microsoft.AppCenter.Apple.Bindings.MSACKeychainUtil;
+    using iOSKeyChainUtil = BD.AppCenter.Apple.Bindings.MSACKeychainUtil;
     
     // The UIApplicationDelegate for the application. This class is responsible for launching the 
     // User Interface of the application, as well as listening (and optionally responding) to 

@@ -154,25 +154,25 @@
     <InterfaceDefinition Include="LaunchScreen.storyboard" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\SDK\AppCenterAnalytics\Microsoft.AppCenter.Analytics.Apple\Microsoft.AppCenter.Analytics.Apple.Mono.csproj">
+    <ProjectReference Include="..\..\SDK\AppCenterAnalytics\BD.AppCenter.Analytics.Apple\BD.AppCenter.Analytics.Apple.Mono.csproj">
       <Project>{ef5d0090-9e12-45b5-961c-45d787bd80a5}</Project>
-      <Name>Microsoft.AppCenter.Analytics.Apple.Mono</Name>
+      <Name>BD.AppCenter.Analytics.Apple.Mono</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\SDK\AppCenterCrashes\Microsoft.AppCenter.Crashes.Apple\Microsoft.AppCenter.Crashes.Apple.Mono.csproj">
+    <ProjectReference Include="..\..\SDK\AppCenterCrashes\BD.AppCenter.Crashes.Apple\BD.AppCenter.Crashes.Apple.Mono.csproj">
       <Project>{4936a94c-be22-4f73-8468-64fa4371ff80}</Project>
-      <Name>Microsoft.AppCenter.Crashes.Apple.Mono</Name>
+      <Name>BD.AppCenter.Crashes.Apple.Mono</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\SDK\AppCenterDistribute\Microsoft.AppCenter.Distribute.Apple\Microsoft.AppCenter.Distribute.Apple.Mono.csproj">
+    <ProjectReference Include="..\..\SDK\AppCenterDistribute\BD.AppCenter.Distribute.Apple\BD.AppCenter.Distribute.Apple.Mono.csproj">
       <Project>{60241627-33bb-45f9-a1b6-6f1cb2bf2c4a}</Project>
-      <Name>Microsoft.AppCenter.Distribute.Apple.Mono</Name>
+      <Name>BD.AppCenter.Distribute.Apple.Mono</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\SDK\AppCenter\Microsoft.AppCenter.Apple\Microsoft.AppCenter.Apple.Mono.csproj">
+    <ProjectReference Include="..\..\SDK\AppCenter\BD.AppCenter.Apple\BD.AppCenter.Apple.Mono.csproj">
       <Project>{b87370cd-af51-45e0-aa15-3e0abc0c30a0}</Project>
-      <Name>Microsoft.AppCenter.Apple.Mono</Name>
+      <Name>BD.AppCenter.Apple.Mono</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Microsoft.AppCenter.Test.Functional\Microsoft.AppCenter.Test.Functional.csproj">
+    <ProjectReference Include="..\BD.AppCenter.Test.Functional\BD.AppCenter.Test.Functional.csproj">
       <Project>{115F38E3-5DD5-469E-8A06-AA6BE4B99777}</Project>
-      <Name>Microsoft.AppCenter.Test.Functional</Name>
+      <Name>BD.AppCenter.Test.Functional</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

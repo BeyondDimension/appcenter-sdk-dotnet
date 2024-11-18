@@ -15,14 +15,14 @@ set pathToFile=%1
 
 call "%VSAPPIDDIR%..\Tools\VsDevCmd.bat"
 
-call :testSignAssemble %pathToFile%Microsoft.AppCenter.Crashes.dll
-call :testSignAssemble %pathToFile%Microsoft.AppCenter.Test.Windows.dll
-call :testSignAssemble %pathToFile%Microsoft.AppCenter.Test.WindowsDesktop.dll
-call :testSignAssemble %pathToFile%Microsoft.AppCenter.dll
-call :testSignAssemble %pathToFile%Microsoft.AppCenter.Crashes.Test.Windows.dll
-call :testSignAssemble %pathToFile%Microsoft.AppCenter.Test.dll
-call :testSignAssemble %pathToFile%Microsoft.AppCenter.Analytics.Test.dll
-call :testSignAssemble %pathToFile%Microsoft.AppCenter.Analytics.Test.Windows.dll
+call :testSignAssemble %pathToFile%BD.AppCenter.Crashes.dll
+call :testSignAssemble %pathToFile%BD.AppCenter.Test.Windows.dll
+call :testSignAssemble %pathToFile%BD.AppCenter.Test.WindowsDesktop.dll
+call :testSignAssemble %pathToFile%BD.AppCenter.dll
+call :testSignAssemble %pathToFile%BD.AppCenter.Crashes.Test.Windows.dll
+call :testSignAssemble %pathToFile%BD.AppCenter.Test.dll
+call :testSignAssemble %pathToFile%BD.AppCenter.Analytics.Test.dll
+call :testSignAssemble %pathToFile%BD.AppCenter.Analytics.Test.Windows.dll
 EXIT /B
 
 :testSignAssemble

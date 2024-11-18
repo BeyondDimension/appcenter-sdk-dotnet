@@ -8,8 +8,8 @@ using Android.Content;
 using Android.OS;
 using Android.Views;
 using Android.Widget;
-using Microsoft.AppCenter;
-using Microsoft.AppCenter.Crashes;
+using BD.AppCenter;
+using BD.AppCenter.Crashes;
 using Uri = Android.Net.Uri;
 
 namespace Contoso.Android.Puppet

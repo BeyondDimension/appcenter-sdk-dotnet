@@ -1,0 +1,39 @@
+// Copyright (c) Microsoft Corporation. All rights reserved.
+// Licensed under the MIT License.
+
+using System;
+using System.Collections.Generic;
+using BD.AppCenter.Ingestion.Models;
+
+namespace BD.AppCenter.Ingestion
+{
+    /// <summary>
+    /// Interface to send logs to the Ingestion service.
+    /// </summary>
+    public interface IIngestion : IDisposable
+    {
+        /// <summary>
+        /// Update log URL.
+        /// </summary>
+        /// <param name="logUrl"></param>
+        void SetLogUrl(string logUrl);
+
+        /// <summary>
+        /// The value indicating whether the ingestion is enabled.
+        /// </summary>
+        bool IsEnabled { get; }
+
+        /// <summary>
+        /// Send logs to the Ingestion service.
+        /// </summary>
+        /// <param name="appSecret">A unique and secret key used to identify the application</param>
+        /// <param name="installId">Install identifier</param>
+        /// <param name="logs">Payload</param>
+        IServiceCall Call(string appSecret, Guid installId, IList<Log> logs);
+
+        /// <summary>
+        /// Close all current calls.
+        /// </summary>
+        void Close();
+    }
+}

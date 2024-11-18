@@ -59,7 +59,7 @@
     <AndroidLinkTool>r8</AndroidLinkTool>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(RunConfiguration)' == 'Default' ">
-    <Run>am start -e "XAMARIN_ANDROID_INT" "{XAMARIN_ANDROID_INT}" -n "com.microsoft.appcenter.xamarin.puppet/Contoso.Android.Puppet.MainActivity"</Run>
+    <Run>am start -e "XAMARIN_ANDROID_INT" "{XAMARIN_ANDROID_INT}" -n "com.BD.AppCenter.xamarin.puppet/Contoso.Android.Puppet.MainActivity"</Run>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Mono.Android" />
@@ -251,24 +251,24 @@
     <ProguardConfiguration Include="proguard.cfg" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\SDK\AppCenterAnalytics\Microsoft.AppCenter.Analytics.Android\Microsoft.AppCenter.Analytics.Android.Mono.csproj">
-      <Name>Microsoft.AppCenter.Analytics.Android.Mono</Name>
+    <ProjectReference Include="..\..\SDK\AppCenterAnalytics\BD.AppCenter.Analytics.Android\BD.AppCenter.Analytics.Android.Mono.csproj">
+      <Name>BD.AppCenter.Analytics.Android.Mono</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\SDK\AppCenter\Microsoft.AppCenter.Android\Microsoft.AppCenter.Android.Mono.csproj">
-      <Name>Microsoft.AppCenter.Android.Mono</Name>
+    <ProjectReference Include="..\..\SDK\AppCenter\BD.AppCenter.Android\BD.AppCenter.Android.Mono.csproj">
+      <Name>BD.AppCenter.Android.Mono</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\SDK\AppCenterCrashes\Microsoft.AppCenter.Crashes.Android\Microsoft.AppCenter.Crashes.Android.Mono.csproj">
-      <Name>Microsoft.AppCenter.Crashes.Android.Mono</Name>
+    <ProjectReference Include="..\..\SDK\AppCenterCrashes\BD.AppCenter.Crashes.Android\BD.AppCenter.Crashes.Android.Mono.csproj">
+      <Name>BD.AppCenter.Crashes.Android.Mono</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup Condition=" '$(Configuration)'=='GooglePlay' ">
-    <ProjectReference Include="..\..\SDK\AppCenterDistribute\Microsoft.AppCenter.Distribute.AndroidPlay\Microsoft.AppCenter.Distribute.AndroidPlay.Mono.csproj">
-      <Name>Microsoft.AppCenter.Distribute.AndroidPlay.Mono</Name>
+    <ProjectReference Include="..\..\SDK\AppCenterDistribute\BD.AppCenter.Distribute.AndroidPlay\BD.AppCenter.Distribute.AndroidPlay.Mono.csproj">
+      <Name>BD.AppCenter.Distribute.AndroidPlay.Mono</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup Condition=" '$(Configuration)'!='GooglePlay' ">
-    <ProjectReference Include="..\..\SDK\AppCenterDistribute\Microsoft.AppCenter.Distribute.Android\Microsoft.AppCenter.Distribute.Android.Mono.csproj">
-      <Name>Microsoft.AppCenter.Distribute.Android.Mono</Name>
+    <ProjectReference Include="..\..\SDK\AppCenterDistribute\BD.AppCenter.Distribute.Android\BD.AppCenter.Distribute.Android.Mono.csproj">
+      <Name>BD.AppCenter.Distribute.Android.Mono</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />

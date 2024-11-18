@@ -4,8 +4,8 @@
 using Android.OS;
 using Android.Views;
 using Android.Widget;
-using Microsoft.AppCenter;
-using Microsoft.AppCenter.Distribute;
+using BD.AppCenter;
+using BD.AppCenter.Distribute;
 
 namespace Contoso.Android.Puppet
 {

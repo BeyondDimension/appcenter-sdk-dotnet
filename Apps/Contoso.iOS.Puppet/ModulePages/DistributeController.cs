@@ -2,8 +2,8 @@
 // Licensed under the MIT License.
 
 using System;
-using Microsoft.AppCenter;
-using Microsoft.AppCenter.Distribute;
+using BD.AppCenter;
+using BD.AppCenter.Distribute;
 using UIKit;
 
 namespace Contoso.iOS.Puppet

@@ -13,9 +13,9 @@ using System.Windows.Controls;
 using System.Windows.Input;
 using Contoso.UtilClassLibrary;
 using Contoso.WPF.Puppet.Properties;
-using Microsoft.AppCenter;
-using Microsoft.AppCenter.Analytics;
-using Microsoft.AppCenter.Crashes;
+using BD.AppCenter;
+using BD.AppCenter.Analytics;
+using BD.AppCenter.Crashes;
 using Microsoft.Win32;
 
 namespace Contoso.WPF.Puppet

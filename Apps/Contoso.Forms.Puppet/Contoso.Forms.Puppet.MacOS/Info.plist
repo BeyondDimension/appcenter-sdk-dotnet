@@ -5,7 +5,7 @@
 	<key>CFBundleName</key>
 	<string>Contoso.Forms.Puppet.MacOS</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.microsoft.appcenter.Contoso-Forms-Puppet-MacOS</string>
+	<string>com.BD.AppCenter.Contoso-Forms-Puppet-MacOS</string>
 	<key>CFBundleShortVersionString</key>
 	<string>5.0.6</string>
 	<key>CFBundleVersion</key>

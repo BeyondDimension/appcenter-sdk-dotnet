@@ -3,7 +3,7 @@
 
 using System.ComponentModel;
 using System.Threading.Tasks;
-using Microsoft.AppCenter;
+using BD.AppCenter;
 using Xamarin.Forms;
 
 namespace Contoso.Forms.Demo

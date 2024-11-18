@@ -167,17 +167,17 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\SDK\AppCenterAnalytics\Microsoft.AppCenter.Analytics.UWP\Microsoft.AppCenter.Analytics.UWP.csproj">
+    <ProjectReference Include="..\..\..\SDK\AppCenterAnalytics\BD.AppCenter.Analytics.UWP\BD.AppCenter.Analytics.UWP.csproj">
       <Project>{200073bf-fa7e-42af-8ed5-aa50be7c0295}</Project>
-      <Name>Microsoft.AppCenter.Analytics.UWP</Name>
+      <Name>BD.AppCenter.Analytics.UWP</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\SDK\AppCenterCrashes\Microsoft.AppCenter.Crashes.UWP\Microsoft.AppCenter.Crashes.UWP.csproj">
+    <ProjectReference Include="..\..\..\SDK\AppCenterCrashes\BD.AppCenter.Crashes.UWP\BD.AppCenter.Crashes.UWP.csproj">
       <Project>{2f715d51-643c-4f7f-9ea4-6554d4eeccb2}</Project>
-      <Name>Microsoft.AppCenter.Crashes.UWP</Name>
+      <Name>BD.AppCenter.Crashes.UWP</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\SDK\AppCenter\Microsoft.AppCenter.UWP\Microsoft.AppCenter.UWP.csproj">
+    <ProjectReference Include="..\..\..\SDK\AppCenter\BD.AppCenter.UWP\BD.AppCenter.UWP.csproj">
       <Project>{15e3fc9b-7714-4468-a296-81627a5b8f01}</Project>
-      <Name>Microsoft.AppCenter.UWP</Name>
+      <Name>BD.AppCenter.UWP</Name>
     </ProjectReference>
     <ProjectReference Include="..\Contoso.Forms.Puppet\Contoso.Forms.Puppet.csproj">
       <Project>{92313c69-3bc4-4276-a1c8-100c86183f12}</Project>

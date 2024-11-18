@@ -2,10 +2,10 @@
   <PropertyGroup>
 
     <!-- Assembly information. -->
-    <Product>Microsoft.AppCenter.Crashes</Product>
-    <RootNamespace>Microsoft.AppCenter.Crashes</RootNamespace>
-    <AssemblyName>Microsoft.AppCenter.Crashes</AssemblyName>
-    <AssemblyTitle>Microsoft.AppCenter.Crashes</AssemblyTitle>
+    <Product>BD.AppCenter.Crashes</Product>
+    <RootNamespace>BD.AppCenter.Crashes</RootNamespace>
+    <AssemblyName>BD.AppCenter.Crashes</AssemblyName>
+    <AssemblyTitle>BD.AppCenter.Crashes</AssemblyTitle>
   </PropertyGroup>
   <ImportGroup>
   

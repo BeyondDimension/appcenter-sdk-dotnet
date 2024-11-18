@@ -1,16 +1,16 @@
 // Copyright (c) Microsoft Corporation.  All rights reserved.
 
-namespace Microsoft.AppCenter.Ingestion
+namespace BD.AppCenter.Ingestion
 {
-    using Microsoft.AppCenter;
+    using BD.AppCenter;
     using Models;
     using System.Threading;
     using System.Threading.Tasks;
 
     /// <summary>
-    /// Extension methods for Microsoft.AppCenter.Ingestion.
+    /// Extension methods for BD.AppCenter.Ingestion.
     /// </summary>
-    public static partial class Microsoft.AppCenter.IngestionExtensions
+    public static partial class BD.AppCenter.IngestionExtensions
     {
             /// <summary>
             /// Send logs to the Ingestion service.

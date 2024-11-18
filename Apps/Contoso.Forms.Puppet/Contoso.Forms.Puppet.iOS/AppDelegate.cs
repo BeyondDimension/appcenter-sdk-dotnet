@@ -4,9 +4,9 @@
 using System;
 using Contoso.Forms.Puppet.iOS;
 using Foundation;
-using Microsoft.AppCenter;
-using Microsoft.AppCenter.Analytics.Apple.Bindings;
-using Microsoft.AppCenter.Distribute;
+using BD.AppCenter;
+using BD.AppCenter.Analytics.Apple.Bindings;
+using BD.AppCenter.Distribute;
 using UIKit;
 using Xamarin.Forms;
 

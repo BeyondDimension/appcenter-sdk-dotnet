@@ -1005,7 +1005,7 @@ ___
 ### App Center Auth
 
 * **[Feature]** Expose the ID Token and Access Token (as raw JWT format) in the `UserInformation` object returned from the sign-in method.
-* **[Breaking change]** The `UserInformation` class has been moved from the `Microsoft.AppCenter` namespace to `Microsoft.AppCenter.Auth` namespace.
+* **[Breaking change]** The `UserInformation` class has been moved from the `BD.AppCenter` namespace to `BD.AppCenter.Auth` namespace.
 
 #### Android
 
@@ -1337,7 +1337,7 @@ ___
 
 #### UWP
 
-* **[Fix #543]** Fix warning "The referenced component 'Microsoft.AppCenter.Crashes.dll' could not be found". You might need to clean solution and package cache after updating nuget to resolve the warning for good.
+* **[Fix #543]** Fix warning "The referenced component 'BD.AppCenter.Crashes.dll' could not be found". You might need to clean solution and package cache after updating nuget to resolve the warning for good.
 
 ### AppCenterPush
 

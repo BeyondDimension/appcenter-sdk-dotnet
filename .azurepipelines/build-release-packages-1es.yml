@@ -327,7 +327,7 @@ extends:
             AuthCertName: 'appcenter-codesigning-auth'
             AuthSignCertName: 'CodeSigning-Certificate-Managed'           
             FolderPath: '$(System.DefaultWorkingDirectory)/'
-            Pattern: 'Microsoft.AppCenter*.nupkg'
+            Pattern: 'BD.AppCenter*.nupkg'
             signConfigType: inlineSignParams
             inlineOperation: |
               [ 
@@ -354,7 +354,7 @@ extends:
             SourceFolder: '$(System.DefaultWorkingDirectory)\output'
             Contents: |
               *.nupkg
-              !Microsoft.AppCenter.Rum.*.nupkg
+              !BD.AppCenter.Rum.*.nupkg
               RELEASE.md
             TargetFolder: '$(Build.ArtifactStagingDirectory)\Packages'
             CleanTargetFolder: true

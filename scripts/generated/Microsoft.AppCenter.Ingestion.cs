@@ -1,9 +1,9 @@
 // Copyright (c) Microsoft Corporation.  All rights reserved.
 
-namespace Microsoft.AppCenter.Ingestion
+namespace BD.AppCenter.Ingestion
 {
-    using IMicrosoft.AppCenter;
-    using Microsoft.AppCenter;
+    using IBD.AppCenter;
+    using BD.AppCenter;
     using Microsoft.Rest;
     using Microsoft.Rest.Serialization;
     using Models;
@@ -16,7 +16,7 @@ namespace Microsoft.AppCenter.Ingestion
     /// <summary>
     /// Microsoft Avalanche Ingestion REST API.
     /// </summary>
-    public partial class Microsoft.Ingestion : Microsoft.Rest.ServiceClient<Microsoft.AppCenter.Ingestion>, IMicrosoft.AppCenter.Ingestion
+    public partial class Microsoft.Ingestion : Microsoft.Rest.ServiceClient<BD.AppCenter.Ingestion>, IBD.AppCenter.Ingestion
     {
         /// <summary>
         /// The base URI of the service.
@@ -39,18 +39,18 @@ namespace Microsoft.AppCenter.Ingestion
         public string ApiVersion { get; set; }
 
         /// <summary>
-        /// Initializes a new instance of the Microsoft.AppCenter.Ingestion class.
+        /// Initializes a new instance of the BD.AppCenter.Ingestion class.
         /// </summary>
         /// <param name='handlers'>
         /// Optional. The delegating handlers to add to the http client pipeline.
         /// </param>
-        public Microsoft.AppCenter.Ingestion(params System.Net.Http.DelegatingHandler[] handlers) : base(handlers)
+        public BD.AppCenter.Ingestion(params System.Net.Http.DelegatingHandler[] handlers) : base(handlers)
         {
             this.Initialize();
         }
 
         /// <summary>
-        /// Initializes a new instance of the Microsoft.AppCenter.Ingestion class.
+        /// Initializes a new instance of the BD.AppCenter.Ingestion class.
         /// </summary>
         /// <param name='rootHandler'>
         /// Optional. The http client handler used to handle http transport.
@@ -58,13 +58,13 @@ namespace Microsoft.AppCenter.Ingestion
         /// <param name='handlers'>
         /// Optional. The delegating handlers to add to the http client pipeline.
         /// </param>
-        public Microsoft.AppCenter.Ingestion(System.Net.Http.HttpClientHandler rootHandler, params System.Net.Http.DelegatingHandler[] handlers) : base(rootHandler, handlers)
+        public BD.AppCenter.Ingestion(System.Net.Http.HttpClientHandler rootHandler, params System.Net.Http.DelegatingHandler[] handlers) : base(rootHandler, handlers)
         {
             this.Initialize();
         }
 
         /// <summary>
-        /// Initializes a new instance of the Microsoft.AppCenter.Ingestion class.
+        /// Initializes a new instance of the BD.AppCenter.Ingestion class.
         /// </summary>
         /// <param name='baseUri'>
         /// Optional. The base URI of the service.
@@ -75,7 +75,7 @@ namespace Microsoft.AppCenter.Ingestion
         /// <exception cref="System.ArgumentNullException">
         /// Thrown when a required parameter is null
         /// </exception>
-        public Microsoft.AppCenter.Ingestion(System.Uri baseUri, params System.Net.Http.DelegatingHandler[] handlers) : this(handlers)
+        public BD.AppCenter.Ingestion(System.Uri baseUri, params System.Net.Http.DelegatingHandler[] handlers) : this(handlers)
         {
             if (baseUri == null)
             {
@@ -85,7 +85,7 @@ namespace Microsoft.AppCenter.Ingestion
         }
 
         /// <summary>
-        /// Initializes a new instance of the Microsoft.AppCenter.Ingestion class.
+        /// Initializes a new instance of the BD.AppCenter.Ingestion class.
         /// </summary>
         /// <param name='baseUri'>
         /// Optional. The base URI of the service.
@@ -99,7 +99,7 @@ namespace Microsoft.AppCenter.Ingestion
         /// <exception cref="System.ArgumentNullException">
         /// Thrown when a required parameter is null
         /// </exception>
-        public Microsoft.AppCenter.Ingestion(System.Uri baseUri, System.Net.Http.HttpClientHandler rootHandler, params System.Net.Http.DelegatingHandler[] handlers) : this(rootHandler, handlers)
+        public BD.AppCenter.Ingestion(System.Uri baseUri, System.Net.Http.HttpClientHandler rootHandler, params System.Net.Http.DelegatingHandler[] handlers) : this(rootHandler, handlers)
         {
             if (baseUri == null)
             {

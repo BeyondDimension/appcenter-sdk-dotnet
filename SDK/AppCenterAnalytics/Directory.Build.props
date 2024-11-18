@@ -2,10 +2,10 @@
   <PropertyGroup>
 
     <!-- Assembly information. -->
-    <Product>Microsoft.AppCenter.Analytics</Product>
-    <RootNamespace>Microsoft.AppCenter.Analytics</RootNamespace>
-    <AssemblyName>Microsoft.AppCenter.Analytics</AssemblyName>
-    <AssemblyTitle>Microsoft.AppCenter.Analytics</AssemblyTitle>
+    <Product>BD.AppCenter.Analytics</Product>
+    <RootNamespace>BD.AppCenter.Analytics</RootNamespace>
+    <AssemblyName>BD.AppCenter.Analytics</AssemblyName>
+    <AssemblyTitle>BD.AppCenter.Analytics</AssemblyTitle>
   </PropertyGroup>
   <ImportGroup>
   

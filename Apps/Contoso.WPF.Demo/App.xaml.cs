@@ -8,9 +8,9 @@ using System.IO;
 using System.Web;
 using System.Windows;
 using Contoso.WPF.Demo.Properties;
-using Microsoft.AppCenter;
-using Microsoft.AppCenter.Analytics;
-using Microsoft.AppCenter.Crashes;
+using BD.AppCenter;
+using BD.AppCenter.Analytics;
+using BD.AppCenter.Crashes;
 
 namespace Contoso.WPF.Demo
 {

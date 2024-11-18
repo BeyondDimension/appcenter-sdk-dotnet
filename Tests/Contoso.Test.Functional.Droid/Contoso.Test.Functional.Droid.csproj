@@ -96,25 +96,25 @@
     <Content Include="xunit.runner.json" CopyToOutputDirectory="PreserveNewest" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\SDK\AppCenterAnalytics\Microsoft.AppCenter.Analytics.Android\Microsoft.AppCenter.Analytics.Android.Mono.csproj">
+    <ProjectReference Include="..\..\SDK\AppCenterAnalytics\BD.AppCenter.Analytics.Android\BD.AppCenter.Analytics.Android.Mono.csproj">
       <Project>{93e4ada5-8d7a-44bf-9549-0ad76ab86e8f}</Project>
-      <Name>Microsoft.AppCenter.Analytics.Android.Mono</Name>
+      <Name>BD.AppCenter.Analytics.Android.Mono</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\SDK\AppCenterCrashes\Microsoft.AppCenter.Crashes.Android\Microsoft.AppCenter.Crashes.Android.Mono.csproj">
+    <ProjectReference Include="..\..\SDK\AppCenterCrashes\BD.AppCenter.Crashes.Android\BD.AppCenter.Crashes.Android.Mono.csproj">
       <Project>{d6db87ca-b8ec-4a38-805f-afdc7fec38eb}</Project>
-      <Name>Microsoft.AppCenter.Crashes.Android.Mono</Name>
+      <Name>BD.AppCenter.Crashes.Android.Mono</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\SDK\AppCenterDistribute\Microsoft.AppCenter.Distribute.Android\Microsoft.AppCenter.Distribute.Android.Mono.csproj">
+    <ProjectReference Include="..\..\SDK\AppCenterDistribute\BD.AppCenter.Distribute.Android\BD.AppCenter.Distribute.Android.Mono.csproj">
       <Project>{ad38dee9-8a74-4b04-93c3-0831b55e7254}</Project>
-      <Name>Microsoft.AppCenter.Distribute.Android.Mono</Name>
+      <Name>BD.AppCenter.Distribute.Android.Mono</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\SDK\AppCenter\Microsoft.AppCenter.Android\Microsoft.AppCenter.Android.Mono.csproj">
+    <ProjectReference Include="..\..\SDK\AppCenter\BD.AppCenter.Android\BD.AppCenter.Android.Mono.csproj">
       <Project>{119c1730-e109-4bc9-aa89-9dca2c50bfd5}</Project>
-      <Name>Microsoft.AppCenter.Android.Mono</Name>
+      <Name>BD.AppCenter.Android.Mono</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Microsoft.AppCenter.Test.Functional\Microsoft.AppCenter.Test.Functional.csproj">
+    <ProjectReference Include="..\BD.AppCenter.Test.Functional\BD.AppCenter.Test.Functional.csproj">
       <Project>{115F38E3-5DD5-469E-8A06-AA6BE4B99777}</Project>
-      <Name>Microsoft.AppCenter.Test.Functional</Name>
+      <Name>BD.AppCenter.Test.Functional</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

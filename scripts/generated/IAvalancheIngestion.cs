@@ -2,7 +2,7 @@
 // Copyright (c) Microsoft Corporation.  All rights reserved.
 // </auto-generated>
 
-namespace Microsoft.AppCenter.Ingestion
+namespace BD.AppCenter.Ingestion
 {
     using Microsoft.Rest;
     using Models;

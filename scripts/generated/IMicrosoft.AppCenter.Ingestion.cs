@@ -1,8 +1,8 @@
 // Copyright (c) Microsoft Corporation.  All rights reserved.
 
-namespace Microsoft.AppCenter.Ingestion
+namespace BD.AppCenter.Ingestion
 {
-    using Microsoft.AppCenter;
+    using BD.AppCenter;
     using Microsoft.Rest;
     using Models;
     using Newtonsoft.Json;

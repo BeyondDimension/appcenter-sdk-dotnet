@@ -34,10 +34,10 @@
     <DisableCodeBlockComponent>False</DisableCodeBlockComponent>
     <CleanIntermediates>True</CleanIntermediates>
     <DocumentationSources>
-      <DocumentationSource sourceFile="..\SDK\AppCenter\Microsoft.AppCenter\Microsoft.AppCenter.csproj" />
-      <DocumentationSource sourceFile="..\SDK\AppCenterAnalytics\Microsoft.AppCenter.Analytics\Microsoft.AppCenter.Analytics.csproj" />
-      <DocumentationSource sourceFile="..\SDK\AppCenterCrashes\Microsoft.AppCenter.Crashes\Microsoft.AppCenter.Crashes.csproj" />
-      <DocumentationSource sourceFile="..\SDK\AppCenterDistribute\Microsoft.AppCenter.Distribute\Microsoft.AppCenter.Distribute.csproj" />
+      <DocumentationSource sourceFile="..\SDK\AppCenter\BD.AppCenter\BD.AppCenter.csproj" />
+      <DocumentationSource sourceFile="..\SDK\AppCenterAnalytics\BD.AppCenter.Analytics\BD.AppCenter.Analytics.csproj" />
+      <DocumentationSource sourceFile="..\SDK\AppCenterCrashes\BD.AppCenter.Crashes\BD.AppCenter.Crashes.csproj" />
+      <DocumentationSource sourceFile="..\SDK\AppCenterDistribute\BD.AppCenter.Distribute\BD.AppCenter.Distribute.csproj" />
     </DocumentationSources>
     <HelpFileVersion>1.0.0.0</HelpFileVersion>
     <MaximumGroupParts>2</MaximumGroupParts>

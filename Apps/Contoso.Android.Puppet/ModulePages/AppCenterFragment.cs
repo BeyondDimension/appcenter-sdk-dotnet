@@ -7,7 +7,7 @@ using Android.Content;
 using Android.OS;
 using Android.Views;
 using Android.Widget;
-using Microsoft.AppCenter;
+using BD.AppCenter;
 
 namespace Contoso.Android.Puppet
 {

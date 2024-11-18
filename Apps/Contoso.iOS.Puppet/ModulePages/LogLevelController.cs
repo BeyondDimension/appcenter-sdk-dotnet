@@ -4,7 +4,7 @@
 using System;
 using System.Collections.Generic;
 using Foundation;
-using Microsoft.AppCenter;
+using BD.AppCenter;
 using UIKit;
 
 namespace Contoso.iOS.Puppet

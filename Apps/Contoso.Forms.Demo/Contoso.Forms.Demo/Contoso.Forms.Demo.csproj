@@ -20,14 +20,14 @@
     <NoStdLib>false</NoStdLib>
   </PropertyGroup>
   <ItemGroup Condition=" '$(Configuration)'!='GooglePlay' ">
-    <PackageReference Include="Microsoft.AppCenter.Distribute" Version="5.0.6" />
+    <PackageReference Include="BD.AppCenter.Distribute" Version="5.0.6" />
   </ItemGroup>
   <ItemGroup Condition=" '$(Configuration)'=='GooglePlay' ">
-    <PackageReference Include="Microsoft.AppCenter.DistributePlay" Version="5.0.6" />
+    <PackageReference Include="BD.AppCenter.DistributePlay" Version="5.0.6" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Microsoft.AppCenter.Analytics" Version="5.0.6" />
-    <PackageReference Include="Microsoft.AppCenter.Crashes" Version="5.0.6" />
+    <PackageReference Include="BD.AppCenter.Analytics" Version="5.0.6" />
+    <PackageReference Include="BD.AppCenter.Crashes" Version="5.0.6" />
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.2578" />
   </ItemGroup>
   <ItemGroup>

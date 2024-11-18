@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package>
   <metadata>
-    <id>Microsoft.AppCenter</id>
+    <id>BD.AppCenter</id>
     <title>App Center</title>
     <authors>Microsoft</authors>
     <owners>microsoft,appcenter</owners>
@@ -57,21 +57,21 @@
   <files>
 
     <!-- UWP -->
-    <file src="$uwp_dir$/Microsoft.AppCenter.dll" target="lib/uap10.0.16299" />
-    <file src="$uwp_dir$/Microsoft.AppCenter.xml" target="lib/uap10.0.16299" />
+    <file src="$uwp_dir$/BD.AppCenter.dll" target="lib/uap10.0.16299" />
+    <file src="$uwp_dir$/BD.AppCenter.xml" target="lib/uap10.0.16299" />
 
     <!-- Windows Classic Desktop (WPF and WinForms) for .NET Framework -->
-    <file src="$windows_net462_dir$/Microsoft.AppCenter.dll" target="lib/net462" />
-    <file src="$windows_net462_dir$/Microsoft.AppCenter.xml" target="lib/net462" />
-    <file src="$windows_net472_dir$/Microsoft.AppCenter.dll" target="lib/net472" />
-    <file src="$windows_net472_dir$/Microsoft.AppCenter.xml" target="lib/net472" />
+    <file src="$windows_net462_dir$/BD.AppCenter.dll" target="lib/net462" />
+    <file src="$windows_net462_dir$/BD.AppCenter.xml" target="lib/net462" />
+    <file src="$windows_net472_dir$/BD.AppCenter.dll" target="lib/net472" />
+    <file src="$windows_net472_dir$/BD.AppCenter.xml" target="lib/net472" />
 
     <!-- Windows Desktop for .NET Core and .NET 5 -->
-    <file src="$windows_netcore_dir$/Microsoft.AppCenter.dll" target="lib/netcoreapp3.1" />
-    <file src="$windows_netcore_dir$/Microsoft.AppCenter.xml" target="lib/netcoreapp3.1" />
+    <file src="$windows_netcore_dir$/BD.AppCenter.dll" target="lib/netcoreapp3.1" />
+    <file src="$windows_netcore_dir$/BD.AppCenter.xml" target="lib/netcoreapp3.1" />
 
     <!-- Windows Desktop for WinUI and modern OS targets -->
-    <file src="$windows_net6_dir$/Microsoft.AppCenter.dll" target="lib/net6.0-windows10.0.17763.0" />
-    <file src="$windows_net6_dir$/Microsoft.AppCenter.xml" target="lib/net6.0-windows10.0.17763.0" />
+    <file src="$windows_net6_dir$/BD.AppCenter.dll" target="lib/net6.0-windows10.0.17763.0" />
+    <file src="$windows_net6_dir$/BD.AppCenter.xml" target="lib/net6.0-windows10.0.17763.0" />
   </files>
 </package>

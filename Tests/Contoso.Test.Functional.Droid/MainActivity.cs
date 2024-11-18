@@ -6,15 +6,15 @@ using Android.App;
 using Android.Content;
 using Android.OS;
 using Android.Util;
-using Microsoft.AppCenter;
-using Microsoft.AppCenter.Test.Functional.Distribute;
+using BD.AppCenter;
+using BD.AppCenter.Test.Functional.Distribute;
 using Xunit.Runners.ResultChannels;
 using Xunit.Runners.UI;
-using Config = Microsoft.AppCenter.Test.Functional.Config;
+using Config = BD.AppCenter.Test.Functional.Config;
 
 namespace Contoso.Test.Functional.Droid
 {
-    using Distribute = Microsoft.AppCenter.Distribute.Distribute;
+    using Distribute = BD.AppCenter.Distribute.Distribute;
 
     [Activity(Label = "xUnit Android Runner", MainLauncher = true, Theme = "@android:style/Theme.Material.Light")]
     public class MainActivity : RunnerActivity

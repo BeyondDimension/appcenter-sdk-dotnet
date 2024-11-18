@@ -1,5 +1,5 @@
 [![GitHub Release](https://img.shields.io/github/release/microsoft/appcenter-sdk-dotnet.svg)](https://github.com/microsoft/appcenter-sdk-dotnet/releases/latest)
-[![NuGet](https://img.shields.io/nuget/v/Microsoft.AppCenter.svg)](https://www.nuget.org/packages/Microsoft.AppCenter/)
+[![NuGet](https://img.shields.io/nuget/v/BD.AppCenter.svg)](https://www.nuget.org/packages/BD.AppCenter/)
 [![license](https://img.shields.io/badge/license-MIT%20License-yellow.svg)](https://github.com/microsoft/appcenter-sdk-dotnet/blob/master/license.txt)
 
 # Visual Studio App Center SDK for .NET(Support for Linux and Windows on the Console App or Avalonia App)

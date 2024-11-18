@@ -3,8 +3,8 @@
 
 using System;
 using System.ComponentModel;
-using Microsoft.AppCenter;
-using Microsoft.AppCenter.Distribute;
+using BD.AppCenter;
+using BD.AppCenter.Distribute;
 using Microsoft.Maui;
 
 namespace Contoso.MAUI.Demo;

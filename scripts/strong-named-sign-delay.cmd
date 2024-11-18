@@ -15,10 +15,10 @@ set pathToFile=%2
 
 call "%VSAPPIDDIR%..\Tools\VsDevCmd.bat"
 
-call :registerOrUnregisterFiles %pathToFile%Microsoft.AppCenter.dll
-call :registerOrUnregisterFiles %pathToFile%Microsoft.AppCenter.Analytics.dll
-call :registerOrUnregisterFiles %pathToFile%Microsoft.AppCenter.Crashes.dll
-call :registerOrUnregisterFiles %pathToFile%Microsoft.AppCenter.Distribute.dll
+call :registerOrUnregisterFiles %pathToFile%BD.AppCenter.dll
+call :registerOrUnregisterFiles %pathToFile%BD.AppCenter.Analytics.dll
+call :registerOrUnregisterFiles %pathToFile%BD.AppCenter.Crashes.dll
+call :registerOrUnregisterFiles %pathToFile%BD.AppCenter.Distribute.dll
 EXIT /B
 
 :registerOrUnregisterFiles

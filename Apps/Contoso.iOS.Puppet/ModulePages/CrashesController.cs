@@ -4,8 +4,8 @@
 using System;
 using System.IO;
 using Foundation;
-using Microsoft.AppCenter;
-using Microsoft.AppCenter.Crashes;
+using BD.AppCenter;
+using BD.AppCenter.Crashes;
 using UIKit;
 
 namespace Contoso.iOS.Puppet

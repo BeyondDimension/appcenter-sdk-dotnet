@@ -47,8 +47,8 @@ namespace Contoso.MacOS.Puppet.ModulePages
         public override void ViewDidAppear()
         {
             base.ViewDidAppear();
-            isAnalyticsEnabledSwitch.StringValue = Microsoft.AppCenter.Analytics.Analytics.IsEnabledAsync().Result ? On : Off;
-            isAnalyticsEnabledSwitch.Enabled = Microsoft.AppCenter.AppCenter.IsEnabledAsync().Result;
+            isAnalyticsEnabledSwitch.StringValue = BD.AppCenter.Analytics.Analytics.IsEnabledAsync().Result ? On : Off;
+            isAnalyticsEnabledSwitch.Enabled = BD.AppCenter.AppCenter.IsEnabledAsync().Result;
             var isEnabled = plist.BoolForKey(Constants.EnableManualSessionTrackerKey);
             ManualSessionTrackerSwitch.StringValue = isEnabled ? On : Off;
         }
@@ -56,8 +56,8 @@ namespace Contoso.MacOS.Puppet.ModulePages
         partial void AnalyticsSwitchEnabled(NSSwitch sender)
         {
             var isAnalyticsEnabled = sender.AccessibilityValue.ToLower().Equals("on");
-            Microsoft.AppCenter.Analytics.Analytics.SetEnabledAsync(isAnalyticsEnabled).Wait();
-            isAnalyticsEnabledSwitch.StringValue = Microsoft.AppCenter.Analytics.Analytics.IsEnabledAsync().Result ? On : Off;
+            BD.AppCenter.Analytics.Analytics.SetEnabledAsync(isAnalyticsEnabled).Wait();
+            isAnalyticsEnabledSwitch.StringValue = BD.AppCenter.Analytics.Analytics.IsEnabledAsync().Result ? On : Off;
         }
 
         partial void HasTrackErrorProperties(NSButton sender)
@@ -72,7 +72,7 @@ namespace Contoso.MacOS.Puppet.ModulePages
 
         partial void StartSession(NSObject sender)
         {
-            Microsoft.AppCenter.Analytics.Analytics.StartSession();
+            BD.AppCenter.Analytics.Analytics.StartSession();
         }
 
         partial void SendTrackEvent(NSButton sender)
@@ -83,10 +83,10 @@ namespace Contoso.MacOS.Puppet.ModulePages
                 var properties = new Dictionary<string, string>();
                 properties.Add("property1", "key1");
                 properties.Add("property2", "key2");
-                Microsoft.AppCenter.Analytics.Analytics.TrackEvent(trackEvent, properties);
+                BD.AppCenter.Analytics.Analytics.TrackEvent(trackEvent, properties);
                 return;
             }
-            Microsoft.AppCenter.Analytics.Analytics.TrackEvent(trackEvent);
+            BD.AppCenter.Analytics.Analytics.TrackEvent(trackEvent);
         }
 
         //strongly typed view accessor

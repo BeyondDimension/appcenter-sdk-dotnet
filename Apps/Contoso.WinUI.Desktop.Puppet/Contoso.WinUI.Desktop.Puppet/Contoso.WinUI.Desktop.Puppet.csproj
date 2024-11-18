@@ -19,9 +19,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\SDK\AppCenterAnalytics\Microsoft.AppCenter.Analytics.WindowsDesktop\Microsoft.AppCenter.Analytics.WindowsDesktop.csproj" />
-    <ProjectReference Include="..\..\..\SDK\AppCenterCrashes\Microsoft.AppCenter.Crashes.WindowsDesktop\Microsoft.AppCenter.Crashes.WindowsDesktop.csproj" />
-    <ProjectReference Include="..\..\..\SDK\AppCenter\Microsoft.AppCenter.WindowsDesktop\Microsoft.AppCenter.WindowsDesktop.csproj" />
+    <ProjectReference Include="..\..\..\SDK\AppCenterAnalytics\BD.AppCenter.Analytics.WindowsDesktop\BD.AppCenter.Analytics.WindowsDesktop.csproj" />
+    <ProjectReference Include="..\..\..\SDK\AppCenterCrashes\BD.AppCenter.Crashes.WindowsDesktop\BD.AppCenter.Crashes.WindowsDesktop.csproj" />
+    <ProjectReference Include="..\..\..\SDK\AppCenter\BD.AppCenter.WindowsDesktop\BD.AppCenter.WindowsDesktop.csproj" />
     <ProjectReference Include="..\..\Contoso.UtilClassLibrary\Contoso.UtilClassLibrary.csproj" />
   </ItemGroup>
 </Project>

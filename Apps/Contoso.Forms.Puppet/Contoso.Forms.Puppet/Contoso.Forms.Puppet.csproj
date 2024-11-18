@@ -19,13 +19,13 @@
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.2515" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\SDK\AppCenter\Microsoft.AppCenter\Microsoft.AppCenter.csproj">
+    <ProjectReference Include="..\..\..\SDK\AppCenter\BD.AppCenter\BD.AppCenter.csproj">
     </ProjectReference>
-    <ProjectReference Include="..\..\..\SDK\AppCenterAnalytics\Microsoft.AppCenter.Analytics\Microsoft.AppCenter.Analytics.csproj">
+    <ProjectReference Include="..\..\..\SDK\AppCenterAnalytics\BD.AppCenter.Analytics\BD.AppCenter.Analytics.csproj">
     </ProjectReference>
-    <ProjectReference Include="..\..\..\SDK\AppCenterCrashes\Microsoft.AppCenter.Crashes\Microsoft.AppCenter.Crashes.csproj">
+    <ProjectReference Include="..\..\..\SDK\AppCenterCrashes\BD.AppCenter.Crashes\BD.AppCenter.Crashes.csproj">
     </ProjectReference>
-    <ProjectReference Include="..\..\..\SDK\AppCenterDistribute\Microsoft.AppCenter.Distribute\Microsoft.AppCenter.Distribute.csproj">
+    <ProjectReference Include="..\..\..\SDK\AppCenterDistribute\BD.AppCenter.Distribute\BD.AppCenter.Distribute.csproj">
     </ProjectReference>
     <ProjectReference Include="..\..\Contoso.UtilClassLibrary\Contoso.UtilClassLibrary.csproj" />
   </ItemGroup>

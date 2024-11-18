@@ -4,9 +4,9 @@
 using System;
 using AppKit;
 using Foundation;
-using Microsoft.AppCenter;
-using Microsoft.AppCenter.Analytics;
-using Microsoft.AppCenter.Crashes;
+using BD.AppCenter;
+using BD.AppCenter.Analytics;
+using BD.AppCenter.Crashes;
 
 namespace Contoso.MacOS.Puppet
 {

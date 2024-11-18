@@ -108,9 +108,9 @@ Task("UpdateDemoVersion").Does(()=>
 
     // Note: nuget update does not work with projects using project.json
     // Replace version in all the demo application
-    ReplaceRegexInFiles("Apps/**/*Demo*/**/project.json", "(Microsoft.AppCenter[^\"]*\":[ ]+\")[^\"]+", "$1" + newVersion, RegexOptions.ECMAScript);
+    ReplaceRegexInFiles("Apps/**/*Demo*/**/project.json", "(BD.AppCenter[^\"]*\":[ ]+\")[^\"]+", "$1" + newVersion, RegexOptions.ECMAScript);
     ReplaceRegexInFiles("Apps/**/*Demo*/**/*.csproj",
-            "<PackageReference Include=\"(Microsoft.AppCenter[^\"]*)\" Version=\"[^\"]+\" />",
+            "<PackageReference Include=\"(BD.AppCenter[^\"]*)\" Version=\"[^\"]+\" />",
             "<PackageReference Include=\"$1\" Version=\"" + newVersion + "\" />", RegexOptions.ECMAScript);
 });
 
@@ -269,7 +269,7 @@ string GetLatestNuGetVersion()
     var nugetUser = EnvironmentVariable("NUGET_USER");
     var nugetPassword = Argument("NuGetPassword", EnvironmentVariable("NUGET_PASSWORD"));
     var nugetFeedId = Argument("NuGetFeedId", EnvironmentVariable("NUGET_FEED_ID"));
-    var url = "https://msmobilecenter.pkgs.visualstudio.com/_packaging/" + nugetFeedId + "/nuget/v2/Search()?$filter=IsAbsoluteLatestVersion+and+Id+eq+'Microsoft.AppCenter'&includePrerelease=true";
+    var url = "https://msmobilecenter.pkgs.visualstudio.com/_packaging/" + nugetFeedId + "/nuget/v2/Search()?$filter=IsAbsoluteLatestVersion+and+Id+eq+'BD.AppCenter'&includePrerelease=true";
     HttpWebRequest request = (HttpWebRequest)WebRequest.Create (url);
     request.Headers["X-NuGet-ApiKey"] = nugetPassword;
     request.Credentials = new NetworkCredential(nugetUser, nugetPassword);
@@ -320,7 +320,7 @@ void UpdateWrapperSdkVersion(string newVersion)
 {
     var patternString = "Version = \"[^\"]+\";";
     var newString = "Version = \"" + newVersion + "\";";
-    ReplaceRegexInFiles("SDK/AppCenter/Microsoft.AppCenter.Shared/WrapperSdk.cs", patternString, newString);
+    ReplaceRegexInFiles("SDK/AppCenter/BD.AppCenter.Shared/WrapperSdk.cs", patternString, newString);
 }
 
 void UpdateNewProjSdkVersion(string newVersion, string newFileVersion)

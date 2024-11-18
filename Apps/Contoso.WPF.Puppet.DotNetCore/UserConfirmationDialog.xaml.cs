@@ -1,4 +1,4 @@
-﻿using Microsoft.AppCenter.Crashes;
+﻿using BD.AppCenter.Crashes;
 using System.Windows;
 
 namespace Contoso.WPF.Puppet.DotNetCore

@@ -41,7 +41,7 @@
     <WarningLevel>4</WarningLevel>
     <AndroidManagedSymbols>true</AndroidManagedSymbols>
     <AndroidLinkMode>Full</AndroidLinkMode>
-    <AndroidLinkSkip>Microsoft.AppCenter.Crashes</AndroidLinkSkip>
+    <AndroidLinkSkip>BD.AppCenter.Crashes</AndroidLinkSkip>
     <EmbedAssembliesIntoApk>true</EmbedAssembliesIntoApk>
     <AndroidSupportedAbis>armeabi-v7a;x86;arm64-v8a;x86_64</AndroidSupportedAbis>
     <EnableProguard>true</EnableProguard>
@@ -56,7 +56,7 @@
     <WarningLevel>4</WarningLevel>
     <AndroidManagedSymbols>true</AndroidManagedSymbols>
     <AndroidLinkMode>Full</AndroidLinkMode>
-    <AndroidLinkSkip>Microsoft.AppCenter.Crashes</AndroidLinkSkip>
+    <AndroidLinkSkip>BD.AppCenter.Crashes</AndroidLinkSkip>
     <EmbedAssembliesIntoApk>true</EmbedAssembliesIntoApk>
     <AndroidSupportedAbis>armeabi-v7a;x86;arm64-v8a;x86_64</AndroidSupportedAbis>
     <EnableProguard>true</EnableProguard>
@@ -64,7 +64,7 @@
     <AndroidLinkTool>r8</AndroidLinkTool>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(RunConfiguration)' == 'Default' ">
-    <Run>am start -e "XAMARIN_FORMS_ANDROID_INT" "{XAMARIN_FORMS_ANDROID_INT}" -e "XAMARIN_FORMS_ANDROID_TARGET_TOKEN_INT" "{XAMARIN_FORMS_ANDROID_TARGET_TOKEN_INT}" -n "com.microsoft.appcenter.xamarin.forms.puppet/Contoso.Forms.Puppet.Droid.MainActivity"</Run>
+    <Run>am start -e "XAMARIN_FORMS_ANDROID_INT" "{XAMARIN_FORMS_ANDROID_INT}" -e "XAMARIN_FORMS_ANDROID_TARGET_TOKEN_INT" "{XAMARIN_FORMS_ANDROID_TARGET_TOKEN_INT}" -n "com.BD.AppCenter.xamarin.forms.puppet/Contoso.Forms.Puppet.Droid.MainActivity"</Run>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -101,24 +101,24 @@
       <Project>{92313C69-3BC4-4276-A1C8-100C86183F12}</Project>
       <Name>Contoso.Forms.Puppet</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\SDK\AppCenterAnalytics\Microsoft.AppCenter.Analytics.Android\Microsoft.AppCenter.Analytics.Android.Mono.csproj">
-      <Name>Microsoft.AppCenter.Analytics.Android.Mono</Name>
+    <ProjectReference Include="..\..\..\SDK\AppCenterAnalytics\BD.AppCenter.Analytics.Android\BD.AppCenter.Analytics.Android.Mono.csproj">
+      <Name>BD.AppCenter.Analytics.Android.Mono</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\SDK\AppCenter\Microsoft.AppCenter.Android\Microsoft.AppCenter.Android.Mono.csproj">
-      <Name>Microsoft.AppCenter.Android.Mono</Name>
+    <ProjectReference Include="..\..\..\SDK\AppCenter\BD.AppCenter.Android\BD.AppCenter.Android.Mono.csproj">
+      <Name>BD.AppCenter.Android.Mono</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\SDK\AppCenterCrashes\Microsoft.AppCenter.Crashes.Android\Microsoft.AppCenter.Crashes.Android.Mono.csproj">
-      <Name>Microsoft.AppCenter.Crashes.Android.Mono</Name>
+    <ProjectReference Include="..\..\..\SDK\AppCenterCrashes\BD.AppCenter.Crashes.Android\BD.AppCenter.Crashes.Android.Mono.csproj">
+      <Name>BD.AppCenter.Crashes.Android.Mono</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup Condition=" '$(Configuration)'=='GooglePlay' ">
-    <ProjectReference Include="..\..\..\SDK\AppCenterDistribute\Microsoft.AppCenter.Distribute.AndroidPlay\Microsoft.AppCenter.Distribute.AndroidPlay.Mono.csproj">
-      <Name>Microsoft.AppCenter.Distribute.AndroidPlay.Mono</Name>
+    <ProjectReference Include="..\..\..\SDK\AppCenterDistribute\BD.AppCenter.Distribute.AndroidPlay\BD.AppCenter.Distribute.AndroidPlay.Mono.csproj">
+      <Name>BD.AppCenter.Distribute.AndroidPlay.Mono</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup Condition=" '$(Configuration)'!='GooglePlay' ">
-    <ProjectReference Include="..\..\..\SDK\AppCenterDistribute\Microsoft.AppCenter.Distribute.Android\Microsoft.AppCenter.Distribute.Android.Mono.csproj">
-      <Name>Microsoft.AppCenter.Distribute.Android.Mono</Name>
+    <ProjectReference Include="..\..\..\SDK\AppCenterDistribute\BD.AppCenter.Distribute.Android\BD.AppCenter.Distribute.Android.Mono.csproj">
+      <Name>BD.AppCenter.Distribute.Android.Mono</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

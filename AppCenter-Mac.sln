@@ -11,13 +11,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AppCenterAnalytics", "AppCe
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AppCenterCrashes", "AppCenterCrashes", "{7FAAA086-4453-4B62-AD9A-2E2ED216E3C4}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.AppCenter", "SDK\AppCenter\Microsoft.AppCenter\Microsoft.AppCenter.csproj", "{3FE04B97-48DE-4895-8612-ECBDFEBD917C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BD.AppCenter", "SDK\AppCenter\BD.AppCenter\BD.AppCenter.csproj", "{3FE04B97-48DE-4895-8612-ECBDFEBD917C}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.AppCenter.Analytics", "SDK\AppCenterAnalytics\Microsoft.AppCenter.Analytics\Microsoft.AppCenter.Analytics.csproj", "{0F13E444-717E-460A-BDE7-8AD537F0A418}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BD.AppCenter.Analytics", "SDK\AppCenterAnalytics\BD.AppCenter.Analytics\BD.AppCenter.Analytics.csproj", "{0F13E444-717E-460A-BDE7-8AD537F0A418}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.AppCenter.Crashes", "SDK\AppCenterCrashes\Microsoft.AppCenter.Crashes\Microsoft.AppCenter.Crashes.csproj", "{302F0881-77AE-4CCE-ACF4-930AD5D4FB08}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BD.AppCenter.Crashes", "SDK\AppCenterCrashes\BD.AppCenter.Crashes\BD.AppCenter.Crashes.csproj", "{302F0881-77AE-4CCE-ACF4-930AD5D4FB08}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.AppCenter.Crashes.Android", "SDK\AppCenterCrashes\Microsoft.AppCenter.Crashes.Android\Microsoft.AppCenter.Crashes.Android.csproj", "{D6DB87CA-B8EC-4A38-805F-AFDC7FEC38EB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BD.AppCenter.Crashes.Android", "SDK\AppCenterCrashes\BD.AppCenter.Crashes.Android\BD.AppCenter.Crashes.Android.csproj", "{D6DB87CA-B8EC-4A38-805F-AFDC7FEC38EB}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Apps", "Apps", "{274AB35C-68B4-4EFA-803B-8A7CFEC25EFC}"
 EndProject
@@ -35,9 +35,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contoso.iOS.Puppet", "Apps\
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AppCenterDistribute", "AppCenterDistribute", "{B0562DBB-3784-4F1C-A355-61CFD44ED963}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.AppCenter.Distribute.Android", "SDK\AppCenterDistribute\Microsoft.AppCenter.Distribute.Android\Microsoft.AppCenter.Distribute.Android.csproj", "{AD38DEE9-8A74-4B04-93C3-0831B55E7254}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BD.AppCenter.Distribute.Android", "SDK\AppCenterDistribute\BD.AppCenter.Distribute.Android\BD.AppCenter.Distribute.Android.csproj", "{AD38DEE9-8A74-4B04-93C3-0831B55E7254}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.AppCenter.Distribute", "SDK\AppCenterDistribute\Microsoft.AppCenter.Distribute\Microsoft.AppCenter.Distribute.csproj", "{41FEBC72-C12B-47E1-B6F6-51D50158C825}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BD.AppCenter.Distribute", "SDK\AppCenterDistribute\BD.AppCenter.Distribute\BD.AppCenter.Distribute.csproj", "{41FEBC72-C12B-47E1-B6F6-51D50158C825}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Contoso.UtilClassLibrary", "Apps\Contoso.UtilClassLibrary\Contoso.UtilClassLibrary.csproj", "{D0FC73E2-AE97-495B-B41B-61CD422A8AE9}"
 EndProject
@@ -45,37 +45,37 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contoso.MacOS.Puppet", "App
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contoso.Forms.Puppet.MacOS", "Apps\Contoso.Forms.Puppet\Contoso.Forms.Puppet.MacOS\Contoso.Forms.Puppet.MacOS.csproj", "{C5B1AC34-F9F1-4C05-AF7A-CB84C16C5481}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.AppCenter.Android", "SDK\AppCenter\Microsoft.AppCenter.Android\Microsoft.AppCenter.Android.csproj", "{B4868C2D-9475-4AF9-9E23-5501EA6468E7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BD.AppCenter.Android", "SDK\AppCenter\BD.AppCenter.Android\BD.AppCenter.Android.csproj", "{B4868C2D-9475-4AF9-9E23-5501EA6468E7}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.AppCenter.Android.Mono", "SDK\AppCenter\Microsoft.AppCenter.Android\Microsoft.AppCenter.Android.Mono.csproj", "{D2D22A09-FF21-4861-839D-CF388EBF8767}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BD.AppCenter.Android.Mono", "SDK\AppCenter\BD.AppCenter.Android\BD.AppCenter.Android.Mono.csproj", "{D2D22A09-FF21-4861-839D-CF388EBF8767}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.AppCenter.Apple", "SDK\AppCenter\Microsoft.AppCenter.Apple\Microsoft.AppCenter.Apple.csproj", "{0FA36642-1B28-48E7-8371-17EBA11556C1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BD.AppCenter.Apple", "SDK\AppCenter\BD.AppCenter.Apple\BD.AppCenter.Apple.csproj", "{0FA36642-1B28-48E7-8371-17EBA11556C1}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.AppCenter.Apple.Mono", "SDK\AppCenter\Microsoft.AppCenter.Apple\Microsoft.AppCenter.Apple.Mono.csproj", "{B87370CD-AF51-45E0-AA15-3E0ABC0C30A0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BD.AppCenter.Apple.Mono", "SDK\AppCenter\BD.AppCenter.Apple\BD.AppCenter.Apple.Mono.csproj", "{B87370CD-AF51-45E0-AA15-3E0ABC0C30A0}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.AppCenter.Analytics.Android", "SDK\AppCenterAnalytics\Microsoft.AppCenter.Analytics.Android\Microsoft.AppCenter.Analytics.Android.csproj", "{ED360680-BCBF-4E70-AB92-C15C717AD627}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BD.AppCenter.Analytics.Android", "SDK\AppCenterAnalytics\BD.AppCenter.Analytics.Android\BD.AppCenter.Analytics.Android.csproj", "{ED360680-BCBF-4E70-AB92-C15C717AD627}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.AppCenter.Analytics.Android.Mono", "SDK\AppCenterAnalytics\Microsoft.AppCenter.Analytics.Android\Microsoft.AppCenter.Analytics.Android.Mono.csproj", "{358ADBFE-60E9-4062-9B55-A76B4D1DA2D8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BD.AppCenter.Analytics.Android.Mono", "SDK\AppCenterAnalytics\BD.AppCenter.Analytics.Android\BD.AppCenter.Analytics.Android.Mono.csproj", "{358ADBFE-60E9-4062-9B55-A76B4D1DA2D8}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.AppCenter.Analytics.Apple", "SDK\AppCenterAnalytics\Microsoft.AppCenter.Analytics.Apple\Microsoft.AppCenter.Analytics.Apple.csproj", "{A0CDD61D-D70A-48A8-8BF4-852637185761}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BD.AppCenter.Analytics.Apple", "SDK\AppCenterAnalytics\BD.AppCenter.Analytics.Apple\BD.AppCenter.Analytics.Apple.csproj", "{A0CDD61D-D70A-48A8-8BF4-852637185761}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.AppCenter.Analytics.Apple.Mono", "SDK\AppCenterAnalytics\Microsoft.AppCenter.Analytics.Apple\Microsoft.AppCenter.Analytics.Apple.Mono.csproj", "{9093B83F-0AAD-4271-B529-2E3C91ABDCF7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BD.AppCenter.Analytics.Apple.Mono", "SDK\AppCenterAnalytics\BD.AppCenter.Analytics.Apple\BD.AppCenter.Analytics.Apple.Mono.csproj", "{9093B83F-0AAD-4271-B529-2E3C91ABDCF7}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.AppCenter.Crashes.Android.Mono", "SDK\AppCenterCrashes\Microsoft.AppCenter.Crashes.Android\Microsoft.AppCenter.Crashes.Android.Mono.csproj", "{9F24754A-6C32-4C7C-B92B-9086ADD8BC72}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BD.AppCenter.Crashes.Android.Mono", "SDK\AppCenterCrashes\BD.AppCenter.Crashes.Android\BD.AppCenter.Crashes.Android.Mono.csproj", "{9F24754A-6C32-4C7C-B92B-9086ADD8BC72}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.AppCenter.Crashes.Apple", "SDK\AppCenterCrashes\Microsoft.AppCenter.Crashes.Apple\Microsoft.AppCenter.Crashes.Apple.csproj", "{B7FA9DC5-5E82-43DA-A439-FD2501A6B758}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BD.AppCenter.Crashes.Apple", "SDK\AppCenterCrashes\BD.AppCenter.Crashes.Apple\BD.AppCenter.Crashes.Apple.csproj", "{B7FA9DC5-5E82-43DA-A439-FD2501A6B758}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.AppCenter.Crashes.Apple.Mono", "SDK\AppCenterCrashes\Microsoft.AppCenter.Crashes.Apple\Microsoft.AppCenter.Crashes.Apple.Mono.csproj", "{CE633A81-6A8B-4930-BCA7-33E13BF0F810}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BD.AppCenter.Crashes.Apple.Mono", "SDK\AppCenterCrashes\BD.AppCenter.Crashes.Apple\BD.AppCenter.Crashes.Apple.Mono.csproj", "{CE633A81-6A8B-4930-BCA7-33E13BF0F810}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.AppCenter.Distribute.Android.Mono", "SDK\AppCenterDistribute\Microsoft.AppCenter.Distribute.Android\Microsoft.AppCenter.Distribute.Android.Mono.csproj", "{1FA1DB85-CB17-46DF-A138-CA90CECB2F15}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BD.AppCenter.Distribute.Android.Mono", "SDK\AppCenterDistribute\BD.AppCenter.Distribute.Android\BD.AppCenter.Distribute.Android.Mono.csproj", "{1FA1DB85-CB17-46DF-A138-CA90CECB2F15}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.AppCenter.Distribute.AndroidPlay", "SDK\AppCenterDistribute\Microsoft.AppCenter.Distribute.AndroidPlay\Microsoft.AppCenter.Distribute.AndroidPlay.csproj", "{5E5435A2-7972-4EF8-A20B-40B63F8E72BB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BD.AppCenter.Distribute.AndroidPlay", "SDK\AppCenterDistribute\BD.AppCenter.Distribute.AndroidPlay\BD.AppCenter.Distribute.AndroidPlay.csproj", "{5E5435A2-7972-4EF8-A20B-40B63F8E72BB}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.AppCenter.Distribute.AndroidPlay.Mono", "SDK\AppCenterDistribute\Microsoft.AppCenter.Distribute.AndroidPlay\Microsoft.AppCenter.Distribute.AndroidPlay.Mono.csproj", "{2F4356BF-7595-4218-9566-19E8FD1E7799}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BD.AppCenter.Distribute.AndroidPlay.Mono", "SDK\AppCenterDistribute\BD.AppCenter.Distribute.AndroidPlay\BD.AppCenter.Distribute.AndroidPlay.Mono.csproj", "{2F4356BF-7595-4218-9566-19E8FD1E7799}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.AppCenter.Distribute.Apple", "SDK\AppCenterDistribute\Microsoft.AppCenter.Distribute.Apple\Microsoft.AppCenter.Distribute.Apple.csproj", "{02B074AF-2C45-4F79-91F7-615AC85E828F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BD.AppCenter.Distribute.Apple", "SDK\AppCenterDistribute\BD.AppCenter.Distribute.Apple\BD.AppCenter.Distribute.Apple.csproj", "{02B074AF-2C45-4F79-91F7-615AC85E828F}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.AppCenter.Distribute.Apple.Mono", "SDK\AppCenterDistribute\Microsoft.AppCenter.Distribute.Apple\Microsoft.AppCenter.Distribute.Apple.Mono.csproj", "{0F912E01-BFF0-408D-95C7-6F1A451835E7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BD.AppCenter.Distribute.Apple.Mono", "SDK\AppCenterDistribute\BD.AppCenter.Distribute.Apple\BD.AppCenter.Distribute.Apple.Mono.csproj", "{0F912E01-BFF0-408D-95C7-6F1A451835E7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1,9 +1,9 @@
 // Copyright (c) Microsoft Corporation. All rights reserved.
 // Licensed under the MIT License.
 
-using Microsoft.AppCenter;
-using Microsoft.AppCenter.Analytics.Ingestion.Models;
-using Microsoft.AppCenter.Channel;
+using BD.AppCenter;
+using BD.AppCenter.Analytics.Ingestion.Models;
+using BD.AppCenter.Channel;
 using System;
 using System.Threading.Tasks;
 

@@ -8,8 +8,8 @@ using Android.Content;
 using Android.OS;
 using Android.Views;
 using Android.Widget;
-using Microsoft.AppCenter;
-using Microsoft.AppCenter.Analytics;
+using BD.AppCenter;
+using BD.AppCenter.Analytics;
 
 namespace Contoso.Android.Puppet
 {

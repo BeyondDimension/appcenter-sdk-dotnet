@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="MSBuild.Sdk.Extras/3.0.44">
+  <PropertyGroup>
+
+    <!-- .NET Framework 4.6.1 is used in Unity. -->
+    <TargetFrameworks>uap10.0.16299;net461</TargetFrameworks>
+    <IncludeSourceRevisionInInformationalVersion>false</IncludeSourceRevisionInInformationalVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(TargetFramework)' == 'uap10.0.16299' ">
+    <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
+    <TargetPlatformVersion>10.0.17763.0</TargetPlatformVersion>
+    <TargetPlatformMinVersion>10.0.16299.0</TargetPlatformMinVersion>
+  </PropertyGroup>
+  <ItemGroup Condition="'$(TargetFramework)' == 'uap10.0.16299'">
+    <TransformFile Include="Properties\BD.AppCenter.Analytics.UWP.rd.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\BD.AppCenter.Analytics.Shared\**\*.cs" />
+    <Compile Include="..\BD.AppCenter.Analytics.Shared.Windows\**\*.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\AppCenter\BD.AppCenter.UWP\BD.AppCenter.UWP.csproj" />
+  </ItemGroup>
+</Project>

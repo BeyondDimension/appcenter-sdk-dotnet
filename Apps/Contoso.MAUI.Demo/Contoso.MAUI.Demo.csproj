@@ -13,7 +13,7 @@
     <!-- Display name -->
     <ApplicationTitle>Contoso.MAUI.Demo</ApplicationTitle>
     <!-- App Identifier -->
-    <ApplicationId>com.microsoft.appcenter.Contoso.MAUI.Demo</ApplicationId>
+    <ApplicationId>com.BD.AppCenter.Contoso.MAUI.Demo</ApplicationId>
     <ApplicationIdGuid>d7a06185-3470-4ae9-8a6f-27a861f146b2</ApplicationIdGuid>
     <SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'ios'">14.2</SupportedOSPlatformVersion>
     <SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'maccatalyst'">14.0</SupportedOSPlatformVersion>
@@ -46,23 +46,23 @@
     <MauiAsset Include="Resources\Raw\**" LogicalName="%(RecursiveDir)%(Filename)%(Extension)" />
   </ItemGroup>
   <ItemGroup>
-    <None Remove="Microsoft.AppCenter.Analytics" />
-    <None Remove="Microsoft.AppCenter.Crashes" />
-    <None Remove="Microsoft.AppCenter.Distribute" />
-    <None Remove="Microsoft.AppCenter.DistributePlay" />
+    <None Remove="BD.AppCenter.Analytics" />
+    <None Remove="BD.AppCenter.Crashes" />
+    <None Remove="BD.AppCenter.Distribute" />
+    <None Remove="BD.AppCenter.DistributePlay" />
     <None Remove="Platforms\iOS\Resources\Images\dotnet_bot.svg" />
     <None Remove="Platforms\iOS\Resources\Images\handbag.png" />
     <None Remove="Platforms\iOS\Resources\Images\lightning.png" />
     <None Remove="Platforms\iOS\Resources\Images\socket.png" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Microsoft.AppCenter.Analytics" Version="5.0.6" />
-    <PackageReference Include="Microsoft.AppCenter.Crashes" Version="5.0.6" />
+    <PackageReference Include="BD.AppCenter.Analytics" Version="5.0.6" />
+    <PackageReference Include="BD.AppCenter.Crashes" Version="5.0.6" />
   </ItemGroup>
   <ItemGroup Condition=" '$(Configuration)'!='GooglePlay' ">
-    <PackageReference Include="Microsoft.AppCenter.Distribute" Version="5.0.6" />
+    <PackageReference Include="BD.AppCenter.Distribute" Version="5.0.6" />
   </ItemGroup>
   <ItemGroup Condition=" '$(Configuration)'=='GooglePlay' ">
-    <PackageReference Include="Microsoft.AppCenter.DistributePlay" Version="5.0.6" />
+    <PackageReference Include="BD.AppCenter.DistributePlay" Version="5.0.6" />
   </ItemGroup>
 </Project>

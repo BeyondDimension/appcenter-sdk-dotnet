@@ -2,10 +2,10 @@
   <PropertyGroup>
 
     <!-- Assembly information. -->
-    <Product>Microsoft.AppCenter.Core</Product>
-    <RootNamespace>Microsoft.AppCenter</RootNamespace>
-    <AssemblyName>Microsoft.AppCenter</AssemblyName>
-    <AssemblyTitle>Microsoft.AppCenter.Core</AssemblyTitle>
+    <Product>BD.AppCenter.Core</Product>
+    <RootNamespace>BD.AppCenter</RootNamespace>
+    <AssemblyName>BD.AppCenter</AssemblyName>
+    <AssemblyTitle>BD.AppCenter.Core</AssemblyTitle>
   </PropertyGroup>
   <ImportGroup>
   

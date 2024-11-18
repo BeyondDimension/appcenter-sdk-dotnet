@@ -1,16 +1,16 @@
 // Copyright (c) Microsoft Corporation.  All rights reserved.
 
-namespace Microsoft.AppCenter.Ingestion.Models
+namespace BD.AppCenter.Ingestion.Models
 {
     using Ingestion;
-    using Microsoft.AppCenter;
-    using Microsoft.AppCenter.Ingestion;
+    using BD.AppCenter;
+    using BD.AppCenter.Ingestion;
     using Models;
     using System.Threading;
     using System.Threading.Tasks;
 
     /// <summary>
-    /// Extension methods for Microsoft.AppCenter.Ingestion.Models.
+    /// Extension methods for BD.AppCenter.Ingestion.Models.
     /// </summary>
     public static partial class Microsoft.Ingestion.ModelsExtensions
     {

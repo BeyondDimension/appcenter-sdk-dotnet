@@ -3,7 +3,7 @@
 
 using System;
 using System.Collections.Generic;
-using Microsoft.AppCenter.Distribute;
+using BD.AppCenter.Distribute;
 using Xamarin.Forms;
 
 namespace Contoso.Forms.Puppet

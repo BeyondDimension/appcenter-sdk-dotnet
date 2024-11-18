@@ -11,17 +11,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AppCenterAnalytics", "AppCe
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AppCenterCrashes", "AppCenterCrashes", "{7FAAA086-4453-4B62-AD9A-2E2ED216E3C4}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.AppCenter.UWP", "SDK\AppCenter\Microsoft.AppCenter.UWP\Microsoft.AppCenter.UWP.csproj", "{15E3FC9B-7714-4468-A296-81627A5B8F01}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BD.AppCenter.UWP", "SDK\AppCenter\BD.AppCenter.UWP\BD.AppCenter.UWP.csproj", "{15E3FC9B-7714-4468-A296-81627A5B8F01}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.AppCenter.Analytics.UWP", "SDK\AppCenterAnalytics\Microsoft.AppCenter.Analytics.UWP\Microsoft.AppCenter.Analytics.UWP.csproj", "{200073BF-FA7E-42AF-8ED5-AA50BE7C0295}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BD.AppCenter.Analytics.UWP", "SDK\AppCenterAnalytics\BD.AppCenter.Analytics.UWP\BD.AppCenter.Analytics.UWP.csproj", "{200073BF-FA7E-42AF-8ED5-AA50BE7C0295}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.AppCenter.Crashes.UWP", "SDK\AppCenterCrashes\Microsoft.AppCenter.Crashes.UWP\Microsoft.AppCenter.Crashes.UWP.csproj", "{2F715D51-643C-4F7F-9EA4-6554D4EECCB2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BD.AppCenter.Crashes.UWP", "SDK\AppCenterCrashes\BD.AppCenter.Crashes.UWP\BD.AppCenter.Crashes.UWP.csproj", "{2F715D51-643C-4F7F-9EA4-6554D4EECCB2}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.AppCenter.WindowsDesktop", "SDK\AppCenter\Microsoft.AppCenter.WindowsDesktop\Microsoft.AppCenter.WindowsDesktop.csproj", "{1E9EC0AA-3E32-4551-80C4-E4F3E53D7590}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BD.AppCenter.WindowsDesktop", "SDK\AppCenter\BD.AppCenter.WindowsDesktop\BD.AppCenter.WindowsDesktop.csproj", "{1E9EC0AA-3E32-4551-80C4-E4F3E53D7590}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.AppCenter.Analytics.WindowsDesktop", "SDK\AppCenterAnalytics\Microsoft.AppCenter.Analytics.WindowsDesktop\Microsoft.AppCenter.Analytics.WindowsDesktop.csproj", "{1F6C139A-29BB-4E74-8DF2-F8CCAB399A67}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BD.AppCenter.Analytics.WindowsDesktop", "SDK\AppCenterAnalytics\BD.AppCenter.Analytics.WindowsDesktop\BD.AppCenter.Analytics.WindowsDesktop.csproj", "{1F6C139A-29BB-4E74-8DF2-F8CCAB399A67}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.AppCenter.Crashes.WindowsDesktop", "SDK\AppCenterCrashes\Microsoft.AppCenter.Crashes.WindowsDesktop\Microsoft.AppCenter.Crashes.WindowsDesktop.csproj", "{DC55C086-714D-4E2F-B6CE-3C14BC3B6646}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BD.AppCenter.Crashes.WindowsDesktop", "SDK\AppCenterCrashes\BD.AppCenter.Crashes.WindowsDesktop\BD.AppCenter.Crashes.WindowsDesktop.csproj", "{DC55C086-714D-4E2F-B6CE-3C14BC3B6646}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

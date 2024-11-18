@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="MSBuild.Sdk.Extras/3.0.44">
+  <PropertyGroup>
+    <TargetFrameworks>Xamarin.iOS;Xamarin.Mac</TargetFrameworks>
+    <IsBindingProject>true</IsBindingProject>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition="$(TargetFramework.EndsWith('iOS'))">
+    <MtouchLink>SdkOnly</MtouchLink>
+    <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="ApiDefinition.cs" />
+    <Compile Remove="StructsAndEnums.cs" />
+    <ObjcBindingApiDefinition Include="ApiDefinition.cs" />
+    <ObjcBindingCoreSource Include="StructsAndEnums.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\BD.AppCenter.Crashes.Shared\**\*.cs" />
+    <Compile Include="..\BD.AppCenter.Crashes.Shared.Xamarin\**\*.cs" />
+  </ItemGroup>
+  <ItemGroup Condition="$(TargetFramework.EndsWith('iOS'))">
+    <NativeReference Include="..\..\..\externals\apple\ios\AppCenterCrashes.a">
+      <Kind>Static</Kind>
+      <ForceLoad>True</ForceLoad>
+      <LinkerFlags>-lc++</LinkerFlags>
+      <IsCxx>True</IsCxx>
+    </NativeReference>
+  </ItemGroup>
+  <ItemGroup Condition="$(TargetFramework.EndsWith('Mac'))">
+    <NativeReference Include="..\..\..\externals\apple\macOS\AppCenterCrashes.framework">
+      <Kind>Framework</Kind>
+      <ForceLoad>True</ForceLoad>
+      <LinkerFlags>-lc++</LinkerFlags>
+      <IsCxx>True</IsCxx>
+    </NativeReference>
+  </ItemGroup>
+  <ItemGroup Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'ios'">
+    <BundleResource Include="..\..\..\externals\apple\AppCenter-SDK-Apple\iOS\AppCenterCrashes.framework\PrivacyInfo.xcprivacy" LogicalName="PrivacyInfo.xcprivacy" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\AppCenter\BD.AppCenter.Apple\BD.AppCenter.Apple.Mono.csproj" />
+  </ItemGroup>
+</Project>

@@ -266,7 +266,7 @@ Task("NuGet")
         // Clean up
         DeleteFiles(nuspecPath);
     }
-    MoveFiles("Microsoft.AppCenter*.nupkg", "output");
+    MoveFiles("BD.AppCenter*.nupkg", "output");
 }).OnError(HandleError);
 
 RunTarget(Target);

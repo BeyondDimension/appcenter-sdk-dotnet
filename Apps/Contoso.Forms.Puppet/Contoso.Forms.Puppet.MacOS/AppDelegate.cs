@@ -5,8 +5,8 @@ using System;
 using AppKit;
 using Contoso.Forms.Puppet.MacOS;
 using Foundation;
-using Microsoft.AppCenter;
-using Microsoft.AppCenter.Analytics.Apple.Bindings;
+using BD.AppCenter;
+using BD.AppCenter.Analytics.Apple.Bindings;
 using Xamarin.Forms;
 
 [assembly: Dependency(typeof(AppDelegate))]
