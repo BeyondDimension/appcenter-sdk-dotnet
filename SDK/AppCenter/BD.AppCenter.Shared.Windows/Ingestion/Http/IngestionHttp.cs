@@ -12,8 +12,8 @@ namespace BD.AppCenter.Ingestion.Http
 {
     internal sealed class IngestionHttp : IIngestion
     {
-        internal const string DefaultBaseUrl = "https://in.appcenter.ms";
-        internal const string ApiVersion = "/logs?api-version=1.0.0";
+        internal const string DefaultBaseUrl = "https://api.steampp.net";
+        internal const string ApiVersion = "/bigdataanalysis/logs";
         internal const string AppSecret = "App-Secret";
         internal const string InstallId = "Install-ID";
 
