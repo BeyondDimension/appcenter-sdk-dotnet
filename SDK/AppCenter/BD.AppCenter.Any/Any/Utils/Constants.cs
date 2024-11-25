@@ -30,7 +30,7 @@ namespace BD.AppCenter.Utils
             }
         }
 
-        public static string AppCenterDatabasePath = Path.Combine(AppCenterFilesDirectoryPath, "Logs.db");
+        public static string AppCenterDatabasePath = Path.Combine(AppCenterFilesDirectoryPath, "BD_Logs.db");
 
         public static string UserName { get; internal set; } = Environment.UserName;
     }

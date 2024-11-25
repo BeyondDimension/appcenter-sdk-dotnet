@@ -35,7 +35,7 @@ namespace BD.AppCenter.Storage
         }
 
         // Const for storage data.
-        private const string TableName = "LogEntry";
+        private const string TableName = "BD_LogEntry";
         private const string ColumnChannelName = "Channel";
         private const string ColumnLogName = "Log";
         private const string ColumnIdName = "Id";
