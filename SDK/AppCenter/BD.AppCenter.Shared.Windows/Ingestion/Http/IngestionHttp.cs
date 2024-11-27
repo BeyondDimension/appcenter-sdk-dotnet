@@ -105,7 +105,8 @@ namespace BD.AppCenter.Ingestion.Http
             return new Dictionary<string, string>
             {
                 { AppSecret, appSecret },
-                { InstallId, installId.ToString() }
+                { InstallId, installId.ToString() },
+                { "User-Agent", $"AppCenterSDK v{WrapperSdk.Version}" }
             };
         }
 
