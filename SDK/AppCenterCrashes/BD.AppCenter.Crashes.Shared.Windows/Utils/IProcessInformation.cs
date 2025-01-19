@@ -23,7 +23,7 @@ namespace BD.AppCenter.Crashes.Utils
         /// <summary>
         /// Gets the name of the current process.
         /// </summary>
-        string ProcessName { get; }
+        string? ProcessName { get; }
 
         /// <summary>
         /// Gets the ID of the parent process.
@@ -33,11 +33,11 @@ namespace BD.AppCenter.Crashes.Utils
         /// <summary>
         /// Gets the name of the parent process.
         /// </summary>
-        string ParentProcessName { get; }
+        string? ParentProcessName { get; }
 
         /// <summary>
         /// Gets the CPU architecture that the current process is running on.
         /// </summary>
-        string ProcessArchitecture { get; }
+        string? ProcessArchitecture { get; }
     }
 }

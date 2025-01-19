@@ -8,19 +8,30 @@ namespace BD.AppCenter.Crashes.Utils;
 
 public sealed class ProcessInformation : IProcessInformation
 {
+    static readonly Lazy<(int pid, DateTime startTime, string name)?> _ProcessInfo = new(() =>
+    {
+        try
+        {
+            var proc = Process.GetCurrentProcess();
+            return (proc.Id, proc.StartTime, proc.ProcessName);
+        }
+        catch (Exception e)
+        {
+            AppCenterLog.Warn(Crashes.LogTag, "Unable to get process info.", e);
+            return null;
+        }
+    });
+
     public DateTime? ProcessStartTime
     {
         get
         {
-            try
+            var procInfo = _ProcessInfo.Value;
+            if (procInfo.HasValue)
             {
-                return Process.GetCurrentProcess().StartTime;
+                return procInfo.Value.startTime;
             }
-            catch (Exception e)
-            {
-                AppCenterLog.Warn(Crashes.LogTag, "Unable to get process start time.", e);
-                return null;
-            }
+            return null;
         }
     }
 
@@ -30,7 +41,16 @@ public sealed class ProcessInformation : IProcessInformation
         {
             try
             {
+#if NET5_0_OR_GREATER
                 return Environment.ProcessId;
+#else
+                var procInfo = _ProcessInfo.Value;
+                if (procInfo.HasValue)
+                {
+                    return procInfo.Value.pid;
+                }
+                return null;
+#endif
             }
             catch (Exception e)
             {
@@ -46,7 +66,24 @@ public sealed class ProcessInformation : IProcessInformation
         {
             try
             {
-                return Process.GetCurrentProcess().ProcessName;
+#if NET6_0_OR_GREATER
+                var procPath = Environment.ProcessPath;
+                if (!string.IsNullOrWhiteSpace(procPath))
+                {
+                    var procName = Path.GetFileNameWithoutExtension(procPath);
+                    if (!string.IsNullOrWhiteSpace(procName))
+                    {
+                        return procName;
+                    }
+                }
+#endif
+
+                var procInfo = _ProcessInfo.Value;
+                if (procInfo.HasValue)
+                {
+                    return procInfo.Value.name;
+                }
+                return null;
             }
             catch (Exception e)
             {
@@ -86,7 +123,7 @@ public sealed class ProcessInformation : IProcessInformation
                     Architecture.X64 => "AMD64",
                     Architecture.Arm => "ARM",
                     Architecture.Arm64 => "ARM64",
-                    _ => null,
+                    _ => arch.ToString().ToUpperInvariant(),
                 };
             }
             return null;
