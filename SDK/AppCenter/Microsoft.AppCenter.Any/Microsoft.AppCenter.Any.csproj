@@ -1,6 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 	<PropertyGroup>
-		<TargetFrameworks>net6.0;net6.0-windows10.0.17763.0;net7.0;net7.0-windows10.0.17763.0</TargetFrameworks>
+		<TargetFrameworks>net10.0;net10.0-windows10.0.17763.0</TargetFrameworks>
 		<ImplicitUsings>enable</ImplicitUsings>
 		<Nullable>enable</Nullable>
 		<UseWPF>false</UseWPF>
@@ -33,9 +33,12 @@
 		<PackageOutputPath>$(MSBuildProjectDirectory)\..\..\..\pkg</PackageOutputPath>
 	</PropertyGroup>
 	<ItemGroup>
-		<PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.1.1" PrivateAssets="All" />
-		<PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
-		<PackageReference Include="SQLitePCLRaw.bundle_green" Version="2.1.6" />
+		<PackageReference Include="Microsoft.SourceLink.GitHub" Version="10.0.102">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="Newtonsoft.Json" Version="13.0.4" />
+		<PackageReference Include="SQLitePCLRaw.bundle_green" Version="2.1.11" />
 	</ItemGroup>
 	<ItemGroup Condition="$(TargetFramework.StartsWith('net6.0-windows'))">
 		<PackageReference Include="System.Management" Version="6.0.2" />
@@ -44,6 +47,12 @@
 	<ItemGroup Condition="$(TargetFramework.StartsWith('net7.0-windows'))">
 		<PackageReference Include="System.Management" Version="7.0.2" />
 		<PackageReference Include="System.Configuration.ConfigurationManager" Version="7.0.0" />
+	</ItemGroup>
+	<ItemGroup Condition="$(TargetFramework.StartsWith('net10.0-windows'))">
+		<PackageReference Include="System.Management" Version="10.0.2" />
+		<PackageReference Include="System.Configuration.ConfigurationManager" Version="10.0.2" />
+		<PackageReference Include="Microsoft.Win32.SystemEvents" Version="10.0.2" />
+		<PackageReference Include="System.Drawing.Common" Version="10.0.2" />
 	</ItemGroup>
 	<ItemGroup>
 		<Compile Include="..\Microsoft.AppCenter.Shared\**\*.cs" />
