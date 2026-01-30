@@ -2,7 +2,6 @@
 // Licensed under the MIT License.
 
 using System;
-using System.Windows.Forms;
 
 namespace BD.AppCenter.Utils
 {
@@ -37,7 +36,12 @@ namespace BD.AppCenter.Utils
             _suspended = false;
 
             WindowsHelper.OnMinimized += _OnMinimizedDelegate;
-            Application.ApplicationExit += delegate { WindowsHelper.OnMinimized -= _OnMinimizedDelegate; };
+            //Application.ApplicationExit += delegate { WindowsHelper.OnMinimized -= _OnMinimizedDelegate; };
+        }
+
+        public static void OnApplicationExit()
+        {
+            WindowsHelper.OnMinimized -= _OnMinimizedDelegate;
         }
 
         public ApplicationLifecycleHelperDesktop()

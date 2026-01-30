@@ -13,7 +13,4 @@
     <Compile Include="..\..\SDK\AppCenterAnalytics\BD.AppCenter.Analytics.Shared\**\*.cs" />
     <Compile Include="..\..\SDK\AppCenterAnalytics\BD.AppCenter.Analytics.Shared.Windows\**\*.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\BD.AppCenter.Test\BD.AppCenter.Test.csproj" />
-  </ItemGroup>
 </Project>

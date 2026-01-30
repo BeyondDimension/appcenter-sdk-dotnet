@@ -9,7 +9,7 @@ using System.Linq;
 using System.Reflection;
 using System.Runtime.InteropServices;
 using System.Text;
-using System.Windows.Forms;
+using static BD.AppCenter.Utils.UnsafeFunctionPointHelper;
 
 namespace BD.AppCenter.Utils
 {
@@ -108,11 +108,15 @@ namespace BD.AppCenter.Utils
 
         public static void GetScreenSize(out int width, out int height)
         {
-            using (var graphics = Graphics.FromHwnd(IntPtr.Zero))
+            //using (var graphics = Graphics.FromHwnd(IntPtr.Zero))
+            //{
+            //    var desktop = graphics.GetHdc();
+            //    width = GetDeviceCaps(desktop, DESKTOPHORZRES);
+            //    height = GetDeviceCaps(desktop, DESKTOPVERTRES);
+            //}
+            unsafe
             {
-                var desktop = graphics.GetHdc();
-                width = GetDeviceCaps(desktop, DESKTOPHORZRES);
-                height = GetDeviceCaps(desktop, DESKTOPVERTRES);
+                (width, height) = _GetScreenSize();
             }
         }
 
@@ -151,41 +155,45 @@ namespace BD.AppCenter.Utils
             return assemblies.FirstOrDefault(assembly => assembly.GetName().Name == name);
         }
 
-        private static Rectangle WindowsRectToRectangle(dynamic windowsRect)
-        {
-            return new Rectangle
-            {
-                X = (int)windowsRect.X,
-                Y = (int)windowsRect.Y,
-                Width = (int)windowsRect.Width,
-                Height = (int)windowsRect.Height
-            };
-        }
+        //private static Rectangle WindowsRectToRectangle(dynamic windowsRect)
+        //{
+        //    return new Rectangle
+        //    {
+        //        X = (int)windowsRect.X,
+        //        Y = (int)windowsRect.Y,
+        //        Width = (int)windowsRect.Width,
+        //        Height = (int)windowsRect.Height
+        //    };
+        //}
 
-        private static bool WindowIntersectsWithAnyScreen(dynamic window)
-        {
-            var windowBounds = WindowsRectToRectangle(window.RestoreBounds);
-            return Screen.AllScreens.Any(screen => screen.Bounds.IntersectsWith(windowBounds));
-        }
+        //private static bool WindowIntersectsWithAnyScreen(dynamic window)
+        //{
+        //    var windowBounds = WindowsRectToRectangle(window.RestoreBounds);
+        //    return Screen.AllScreens.Any(screen => screen.Bounds.IntersectsWith(windowBounds));
+        //}
 
         public static bool IsAnyWindowNotMinimized()
         {
-            // If not in WPF, query the available forms
-            if (WpfApplication == null)
-            {
-                return Application.OpenForms.Cast<Form>().Any(form => form.WindowState != FormWindowState.Minimized);
-            }
+            //// If not in WPF, query the available forms
+            //if (WpfApplication == null)
+            //{
+            //    return Application.OpenForms.Cast<Form>().Any(form => form.WindowState != FormWindowState.Minimized);
+            //}
 
-            // If in WPF, query the available windows
-            foreach (var window in WpfApplication.Windows)
+            //// If in WPF, query the available windows
+            //foreach (var window in WpfApplication.Windows)
+            //{
+            //    // Not minimized is true if WindowState is not "Minimized" and the window is on screen
+            //    if ((int)window.WindowState != Minimized && WindowIntersectsWithAnyScreen(window))
+            //    {
+            //        return true;
+            //    }
+            //}
+            //return false;
+            unsafe
             {
-                // Not minimized is true if WindowState is not "Minimized" and the window is on screen
-                if ((int)window.WindowState != Minimized && WindowIntersectsWithAnyScreen(window))
-                {
-                    return true;
-                }
+                return _IsAnyWindowNotMinimized();
             }
-            return false;
         }
 
         public static string GetWinFormsProductVersion()
@@ -195,7 +203,27 @@ namespace BD.AppCenter.Utils
              * If the AssemblyInformationalVersion is not applied to an assembly,
              * the version number specified by the AssemblyFileVersion attribute is used instead.
              */
-            return Application.ProductVersion;
+            unsafe
+            {
+                return _GetWinFormsProductVersion();
+            }
         }
+
+        public static unsafe void SetUnsafeFunctionPoints(
+            delegate* managed<string> fGetWinFormsProductVersion,
+            delegate* managed<bool> fIsAnyWindowNotMinimized,
+            delegate* managed<(int width, int height)> fGetScreenSize)
+        {
+            _GetWinFormsProductVersion = fGetWinFormsProductVersion;
+            _IsAnyWindowNotMinimized = fIsAnyWindowNotMinimized;
+            _GetScreenSize = fGetScreenSize;
+        }
+    }
+
+    file static unsafe class UnsafeFunctionPointHelper
+    {
+        internal static delegate* managed<string> _GetWinFormsProductVersion;
+        internal static delegate* managed<bool> _IsAnyWindowNotMinimized;
+        internal static delegate* managed<(int width, int height)> _GetScreenSize;
     }
 }
